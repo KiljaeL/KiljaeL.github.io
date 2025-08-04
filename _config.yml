@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Kiljae Lee"
+title                    : "Kiljae Lee - Ph.D. Candidate in Statistics"
 title_separator          : "-"
 name                     : &name "Kiljae Lee"
-description              : &description "personal description"
+description              : &description "Kiljae Lee is a Ph.D. Candidate in Statistics at The Ohio State University, specializing in data-centric AI, uncertainty quantification, and scalable algorithms for modern AI systems."
 url                      : https://kiljaeL.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -91,6 +91,9 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
+# Google Analytics (optional - add your tracking ID)
+google_analytics         : # UA-XXXXXXXX-X or G-XXXXXXXXXX
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
