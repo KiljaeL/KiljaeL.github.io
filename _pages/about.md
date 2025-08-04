@@ -11,7 +11,7 @@ Hi! I am a **Ph.D. candidate in Statistics** at the Ohio State University, advis
 
 I am passionate about advancing **data-centric AI through principled methods** for data attribution. Currently I am designing tools that quantify the value of dataset both fairly and efficiently [[1]](https://arxiv.org/abs/2505.19013). My research focuses on developing theoretically grounded yet scalable approaches that can be applied across diverse AI applications including generative AI modeling.
 
-As a statistician, I am also deeply interested in methods that **quantify uncertainty in black-box models**, especially those that remain robust under model misspecification [[2]](https://openreview.net/forum?id=Bt1vnCnAVS&noteId=uNqjmfay9Q). My broader goal is to create algorithms that are not only statistically sound but also computationally feasible, so they can scale with modern AI systems .
+As a statistician, I am also deeply interested in methods that **quantify uncertainty in black-box models**, especially those that remain robust under model misspecification [[2]](https://openreview.net/forum?id=Bt1vnCnAVS&noteId=uNqjmfay9Q). My broader goal is to create algorithms that are not only statistically sound but also computationally feasible, so they can scale with modern AI systems.
 
 ## Research Interests
 
@@ -23,7 +23,7 @@ My research interests span across several areas in statistics and machine learni
 ## Publications
 
 - **Faithful Group Shapley Value**  
-  Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees. **ICML 2025 DataWorld Workshop, Best Paper Award** *(Honorable Mention; 3 out of 55 submissions)*.  
+  Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees. **ICML 2025 DataWorld Workshop, Best Paper Award** *(Honorable Mention; 3 out of 55 submissions)*  
   [[PDF]](https://arxiv.org/abs/2505.19013)
 
 - **Leave-One-Out Stable Conformal Prediction**  
