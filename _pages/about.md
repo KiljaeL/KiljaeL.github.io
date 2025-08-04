@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a Ph.D. candidate at the Ohio State Univerisity, advised by [Prof. Yuan Zhang](https://www.asc.ohio-state.edu/zhang.7824/).
+Hi! I am a Ph.D. candidate in Statistics at the Ohio State University, advised by [Prof. Yuan Zhang](https://www.asc.ohio-state.edu/zhang.7824/).
 
 I am passionate about advancing data-centric AI through principled methods for data attribution. Currently I am designing tools that quantify the value of dataset both fairly and efficiently [[1]](https://arxiv.org/abs/2505.19013). My research focuses on developing theoretically grounded yet scalable approaches that can be applied across diverse AI applications including generative AI modeling.
 
