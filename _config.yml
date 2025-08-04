@@ -22,11 +22,11 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "kiljae.jpg"
+  avatar           : "kiljae2.png"
   name             : "Kiljae Lee"
   pronouns         : # example: "she/her"  
-  bio              : "3rd-year Ph.D. Student in Statistics"
-  location         : "Columbus, OH"
+  bio              : "Ph.D. Candidate in Statistics"
+  # location         : "Columbus, OH"
   employer         : "The Ohio State University"
   uri              : # URL
   email            : "lee.10428@osu.edu" 
@@ -59,7 +59,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "kiljaelee"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
