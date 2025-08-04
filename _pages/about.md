@@ -24,17 +24,17 @@ My research interests span across several areas in statistics and machine learni
 
 - **Faithful Group Shapley Value**  
   Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees.  
-  *ICML 2025 DataWorld Workshop*, Best Paper Award (Honorable Mention; 3 out of 55 submissions).  
+  **ICML 2025 DataWorld Workshop, Best Paper Award** *(Honorable Mention; 3 out of 55 submissions)*.  
   [[PDF]](https://arxiv.org/abs/2505.19013)
 
 - **Leave-One-Out Stable Conformal Prediction**  
   Proposed a novel conformal prediction algorithm leveraging algorithmic stability, achieving fast and reliable uncertainty quantification without sacrificing statistical validity.  
-  *ICLR 2025*  
+  **ICLR 2025**
   [[PDF]](https://openreview.net/forum?id=Bt1vnCnAVS)
 
 ## Experience
 
-- **Statistical Consultant**, The Ohio State University (Apr 2025 – Present)  
+- **Statistical Consultant**, The Ohio State University (Apr 2025 – Aug 2025)  
   Advised 6 clients across psychology, special education, city planning, and agricultural science. Provided statistical modeling and analysis for dissertation defenses and grant proposals.
 
 - **Graduate Teaching Assistant**, The Ohio State University (Aug 2023 – Present)  
@@ -47,18 +47,15 @@ My research interests span across several areas in statistics and machine learni
 
 - **The Ohio State University**, Columbus, OH  
   *Ph.D. in Statistics* (Aug 2022 – Expected Jun 2027)  
-  GPA: 4.00 / 4.00  
   Advisor: Dr. Yuan Zhang
 
 - **Korea University**, Seoul, South Korea  
   *Master in Statistics* (Mar 2020 – Aug 2021)  
-  GPA: 4.44 / 4.50  
   Advisor: Dr. Taeryon Choi  
   Thesis: *Fully Bayesian Semiparametric Two-stage Meta-analysis*
 
 - **Korea University**, Seoul, South Korea  
   *Bachelor of Statistics* (Mar 2014 – Feb 2020)  
-  GPA: 4.14 / 4.50
 
 ## Honors & Awards
 
