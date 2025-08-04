@@ -13,24 +13,11 @@ I am passionate about advancing data-centric AI through principled methods for d
 
 As a statistician, I am also deeply interested in methods that quantify uncertainty in black-box models, especially those that remain robust under model misspecification. My broader goal is to create algorithms that are not only statistically sound but also computationally feasible, so they can scale with modern AI systems [[2]](https://openreview.net/forum?id=Bt1vnCnAVS&noteId=uNqjmfay9Q).
 
-<div style="display: flex; gap: 2rem; margin: 2rem 0;">
-<div style="flex: 1; border-right: 2px solid #e0e0e0; padding-right: 2rem;">
+---
 
 ## Research Interests
 
 My research interests span across several areas in statistics and machine learning:
 
-- **Data Attribution**: Developing principled methods to quantify the value of datasets in AI systems
-- **Uncertainty Quantification**: Robust methods for quantifying uncertainty in black-box models
-- **Scalable Algorithms**: Creating computationally feasible algorithms that scale with modern AI systems
-- **Generative AI**: Applications in generative AI modeling and evaluation
-
-</div>
-<div style="flex: 1; padding-left: 2rem;">
-
-## Contact
-
-Feel free to reach out if you'd like to discuss research opportunities or collaborations!
-
-</div>
-</div>
+- **Data-Centric AI**
+- **Uncertainty Quantification**
