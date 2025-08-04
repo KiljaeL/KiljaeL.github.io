@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Kiljae Lee - Ph.D. Candidate in Statistics | Data-Centric AI Researcher"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
