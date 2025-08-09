@@ -22,13 +22,16 @@ My research interests span across several areas in statistics and machine learni
 
 ## Publications
 
-- **Faithful Group Shapley Value**  
-  Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees. **ICML 2025 DataWorld Workshop, Best Paper Award** *(Honorable Mention; 3 out of 55 submissions)*  
-  [[PDF]](https://arxiv.org/abs/2505.19013)
+- **Faithful Group Shapley Value** [[PDF]](https://arxiv.org/abs/2505.19013)
+  Kiljae Lee*, Ziqi Liu*, Weijing Tang and Yuan Zhang
+  _In Submission_ **ICML 2025 DataWorld Workshop, Best Paper Award** *(Honorable Mention; 3 out of 55 submissions)*, (* co-first author)
+  Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees.
+  
 
-- **Leave-One-Out Stable Conformal Prediction**  
+- **Leave-One-Out Stable Conformal Prediction** [[PDF]](https://openreview.net/forum?id=Bt1vnCnAVS)
+  Kiljae Lee and Yuan Zhang
   Proposed a novel conformal prediction algorithm leveraging algorithmic stability, achieving fast and reliable uncertainty quantification without sacrificing statistical validity. **ICLR 2025**
-  [[PDF]](https://openreview.net/forum?id=Bt1vnCnAVS)
+  
 
 ## Experience
 
