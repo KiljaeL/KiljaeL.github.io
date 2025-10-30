@@ -22,9 +22,9 @@ My research interests span across several areas in statistics and machine learni
 
 ## Publications
 
-- **Faithful Group Shapley Value** [[PDF]](https://arxiv.org/abs/2505.19013)  
+- **Faithful Group Shapley Value** [[PDF]](https://openreview.net/forum?id=z6d5MRMDNf)  
   Kiljae Lee\*, Ziqi Liu\*, Weijing Tang and Yuan Zhang  
-  **In Submission**  
+  **NeurIPS 2025**  
   **ICML 2025 DataWorld Workshop, Best Paper Award** (Honorable Mention; 3 out of 55 submissions)  
   *Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees.*
   
@@ -63,6 +63,8 @@ My research interests span across several areas in statistics and machine learni
 
 ## Honors & Awards
 
+- **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University (2026);
+  Recognizes independence, creativity, originality, progress, and potential for publication/application in PhD research. One of two awardees.  
 - **University Fellowship**, The Ohio State University (2022–2023)
 - **Academic Excellence Scholarships**, Korea University (2015–2019)
 
