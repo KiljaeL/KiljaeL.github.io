@@ -2,72 +2,68 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi! I am a **Ph.D. candidate in Statistics** at the Ohio State University, advised by [Prof. Yuan Zhang](https://www.asc.ohio-state.edu/zhang.7824/).
+Hi! I am a **Ph.D. candidate in Statistics** at The Ohio State University, advised by [Prof. Yuan Zhang](https://www.asc.ohio-state.edu/zhang.7824/).
 
-I am passionate about advancing **data-centric AI through principled methods** for data attribution. Currently I am designing tools that quantify the value of dataset both fairly and efficiently [[1]](https://openreview.net/forum?id=z6d5MRMDNf). My research focuses on developing theoretically grounded yet scalable approaches that can be applied across diverse AI applications including generative AI modeling.
+My research develops **principled and scalable methods for modern AI systems**, especially where statistical theory can make black-box models more reliable, interpretable, and accountable. I work on data-centric AI, explainable AI, data valuation, Shapley-based attribution, and uncertainty quantification.
 
-As a statistician, I am also deeply interested in methods that **quantify uncertainty in black-box models**, especially those that remain robust under model misspecification [[2]](https://openreview.net/forum?id=Bt1vnCnAVS&noteId=uNqjmfay9Q). My broader goal is to create algorithms that are not only statistically sound but also computationally feasible, so they can scale with modern AI systems.
+The common thread in my work is simple: modern AI systems depend on data, model outputs, and human preferences that are often structured, strategic, noisy, or expensive to evaluate. I design methods that respect that structure while remaining computationally feasible.
 
-## Research Interests
+## Research Focus
 
-My research interests span across several areas in statistics and machine learning:
+- **Data-centric AI and data valuation**: quantifying the value of data points, data groups, and contributors in machine learning systems.
+- **Explainable AI and attribution**: developing Shapley-based methods that account for priority, precedence, and structured dependencies.
+- **Uncertainty quantification**: building conformal prediction tools that are statistically valid and computationally efficient.
+- **Statistical foundations for AI**: turning theoretical guarantees into algorithms that scale to modern AI applications, including generative AI and LLM-related settings.
 
-- **Data-Centric AI**
-- **Uncertainty Quantification**
+## Selected Highlights
 
-## Publications
+- **Priority-Aware Shapley Value** (**ICML 2026**): introduces PASV, a Shapley-based framework that incorporates precedence constraints and contributor-specific priority weights for more structure-faithful attribution.
+- **Faithful Group Shapley Value** (**NeurIPS 2025**; **ICML 2025 DataWorld Workshop Honorable Mention for Best Paper**): develops a robust method for group-level data valuation that is resistant to strategic group splitting.
+- **Leave-One-Out Stable Conformal Prediction** (**ICLR 2025**): uses leave-one-out algorithmic stability to make conformal prediction faster while maintaining statistical validity.
 
-- **Faithful Group Shapley Value** [[PDF]](https://openreview.net/forum?id=z6d5MRMDNf)  
-  Kiljae Lee\*, Ziqi Liu\*, Weijing Tang and Yuan Zhang  
-  **NeurIPS 2025**  
-  **ICML 2025 DataWorld Workshop, Best Paper Award** (Honorable Mention; 3 out of 55 submissions)  
-  *Developed a fast and robust method for group-data valuation that satisfies a novel faithfulness axiom, ensuring resistance to adversarial manipulation and strong theoretical guarantees.*
-  
-
-- **Leave-One-Out Stable Conformal Prediction** [[PDF]](https://openreview.net/forum?id=Bt1vnCnAVS)  
-  Kiljae Lee and Yuan Zhang  
-  **ICLR 2025**  
-  *Proposed a novel conformal prediction algorithm leveraging algorithmic stability, achieving fast and reliable uncertainty quantification without sacrificing statistical validity.*
-  
-(* co-first author)
+See the full list on my [Publications](/publications/) page or my [Google Scholar profile](https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra).
 
 ## Experience
 
-- **Statistical Consultant**, The Ohio State University (Apr 2025 – Aug 2025)  
-  Advised 6 clients across psychology, special education, city planning, and agricultural science. Provided statistical modeling and analysis for dissertation defenses and grant proposals.
+- **Statistics Researcher Intern**, United Airlines (May 2026 - Present)
+  Working on applied statistical and machine learning problems in an industry setting.
 
-- **Graduate Teaching Assistant**, The Ohio State University (Aug 2023 – Present)  
+- **Graduate Research Assistant**, The Ohio State University (Aug 2025 - Present)
+  Researching data valuation, attribution, and uncertainty quantification for modern AI systems.
+
+- **Graduate Teaching Assistant**, The Ohio State University (Aug 2023 - Present)
   TA for 11 courses including Advanced Theory of Statistics, Statistical Computation, and Statistical Machine Learning.
 
-- **Graduate Research Assistant**, Korea University (Mar 2020 – Aug 2021)  
-  Developed a Bayesian semiparametric two-stage meta-analysis model and applied it to U.S. COVID-19 data (Master’s Thesis, manuscript in submission).
+- **Statistical Consultant**, The Ohio State University (May 2025 - Jul 2025)
+  Advised 6 clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis.
 
 ## Education
 
-- **The Ohio State University**, Columbus, OH  
-  *Ph.D. in Statistics* (Aug 2022 – Expected Jun 2027)  
+- **The Ohio State University**, Columbus, OH
+  *Ph.D. in Statistics; Minor in Computer Science* (Aug 2022 - Expected Jun 2027)
   Advisor: Dr. Yuan Zhang
 
-- **Korea University**, Seoul, South Korea  
-  *Master in Statistics* (Mar 2020 – Aug 2021)  
-  Advisor: Dr. Taeryon Choi  
+- **Korea University**, Seoul, South Korea
+  *Master in Statistics* (Mar 2020 - Aug 2021)
+  Advisor: Dr. Taeryon Choi
   Thesis: *Fully Bayesian Semiparametric Two-stage Meta-analysis*
 
-- **Korea University**, Seoul, South Korea  
-  *Bachelor of Statistics* (Mar 2014 – Feb 2020)  
+- **Korea University**, Seoul, South Korea
+  *Bachelor of Statistics* (Mar 2014 - Feb 2020)
 
 ## Honors & Awards
 
-- **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University (2026);
-  Recognizes independence, creativity, originality, progress, and potential for publication/application in PhD research. One of two awardees.  
-- **University Fellowship**, The Ohio State University (2022–2023)
-- **Academic Excellence Scholarships**, Korea University (2015–2019)
+- **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University (2026)
+  Recognizes independence, creativity, originality, progress, and potential for publication/application in Ph.D. research. One of two awardees.
+- **University Fellowship**, The Ohio State University (2022-2023)
+- **Academic Excellence Scholarships**, Korea University (2015-2019)
 
 ## Skills
 
-**Languages/Tools**: Python (Scikit-learn, PyTorch, Keras, TensorFlow), R, LaTeX, SQL, C++, MATLAB, SAS
+- **Languages/Tools**: Python, R, LaTeX, SQL, C++, MATLAB, SAS, Julia
+- **ML/AI**: Scikit-learn, PyTorch, TensorFlow, Keras

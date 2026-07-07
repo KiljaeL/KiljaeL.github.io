@@ -12,10 +12,10 @@ site_theme               : "default"
 title                    : "Kiljae Lee"
 title_separator          : "-"
 name                     : &name "Kiljae Lee"
-description              : &description "Kiljae Lee is a Ph.D. Candidate in Statistics at The Ohio State University, specializing in data-centric AI, uncertainty quantification, and scalable algorithms for modern AI systems."
+description              : &description "Kiljae Lee is a Ph.D. candidate in Statistics at The Ohio State University, developing principled and scalable methods for data-centric AI, explainable AI, data valuation, and uncertainty quantification."
 url                      : https://kiljaeL.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "KiljaeL/KiljaeL.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -25,8 +25,8 @@ author:
   avatar           : "kiljae2.png"
   name             : "Kiljae Lee"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Candidate in Statistics"
-  # location         : "Columbus, OH"
+  bio              : "Ph.D. candidate in Statistics"
+  location         : "Columbus, OH"
   employer         : "The Ohio State University"
   uri              : # URL
   email            : "lee.10428@osu.edu" 
@@ -77,12 +77,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  workshops:
+    title: 'Workshop Papers and Preprints'
+  manuscripts:
+    title: 'Journal Articles'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

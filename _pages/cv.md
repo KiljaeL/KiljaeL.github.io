@@ -9,56 +9,54 @@ redirect_from:
 
 {% include base_path %}
 
+Summary
+======
+Ph.D. candidate in Statistics at The Ohio State University working on data-centric AI, explainable AI, Shapley-based data valuation, and uncertainty quantification for modern AI systems.
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **The Ohio State University**, Columbus, OH
+  Ph.D. in Statistics; Minor in Computer Science, Aug 2022 - expected Jun 2027
+  Advisor: Dr. Yuan Zhang
+* **Korea University**, Seoul, South Korea
+  Master in Statistics, Mar 2020 - Aug 2021
+  Advisor: Dr. Taeryon Choi
+  Thesis: *Fully Bayesian Semiparametric Two-stage Meta-analysis*
+* **Korea University**, Seoul, South Korea
+  Bachelor of Statistics, Mar 2014 - Feb 2020
 
-Work experience
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Statistics Researcher Intern**, United Airlines, May 2026 - Present
+* **Graduate Research Assistant**, The Ohio State University, Aug 2025 - Present
+* **Graduate Teaching Assistant**, The Ohio State University, Aug 2023 - Present
+  TA for 11 courses including Advanced Theory of Statistics, Statistical Computation, and Statistical Machine Learning.
+* **Statistical Consultant**, The Ohio State University, May 2025 - Jul 2025
+  Advised 6 clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis.
+* **Graduate Research Assistant**, Korea University, Mar 2020 - Aug 2021
+  Developed a Bayesian semiparametric two-stage meta-analysis model and applied it to U.S. COVID-19 data.
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+Honors and Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+* **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University, 2026
+* **University Fellowship**, The Ohio State University, 2022-2023
+* **Academic Excellence Scholarships**, Korea University, 2015-2019
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* **The Ohio State University**, Aug 2023 - Present
+  Teaching assistant for 11 courses including Statistical Theory I, Computational Statistics, Introduction to R, Statistical Inference for Data Analytics, Statistical Modeling for Discovery II, Applied Multivariate Analysis, and Elementary Statistics.
+* **Korea University**, Mar 2020 - Aug 2021
+  Teaching assistant for Statistical Computing, Introduction to Bayesian Statistics, and Statistical Research Method.
+
+Skills
 ======
-* Currently signed in to 43 different slack teams
+* **Languages/Tools**: Python, R, LaTeX, SQL, C++, MATLAB, SAS, Julia
+* **ML/AI**: Scikit-learn, PyTorch, TensorFlow, Keras
+* **Research Areas**: Data-centric AI, explainable AI, Shapley value, data valuation, conformal prediction, uncertainty quantification
