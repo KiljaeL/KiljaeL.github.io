@@ -58,6 +58,10 @@ See the full list on my [Publications](/publications/) page or my [Google Schola
 
 ## Honors & Awards
 
+- **Gold Reviewer Award**, ICML 2026 (Jun 2026)
+  Awarded to the top 25% of reviewers based on area-chair ratings of submitted reviews.
+- **Honorable Mention**, ICML 2025 DataWorld Workshop (Jul 2025)
+  Awarded to *Faithful Group Shapley Value* as one of two honorable mentions in the workshop's Best Paper Awards.
 - **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University (2026)
   Recognizes independence, creativity, originality, progress, and potential for publication/application in Ph.D. research. One of two awardees.
 - **University Fellowship**, The Ohio State University (2022-2023)
