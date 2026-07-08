@@ -23,7 +23,7 @@ The common thread in my work is simple: modern AI systems depend on data, model 
 ## Selected Highlights
 
 - **Priority-Aware Shapley Value** (**ICML 2026**): introduces PASV, a Shapley-based framework that incorporates precedence constraints and contributor-specific priority weights for more structure-faithful attribution.
-- **Faithful Group Shapley Value** (**NeurIPS 2025**; **ICML 2025 DataWorld Workshop Honorable Mention for Best Paper**): develops a robust method for group-level data valuation that is resistant to strategic group splitting.
+- **Faithful Group Shapley Value** (**NeurIPS 2025**; **ICML 2025 DataWorld Workshop Best Paper Award Honorable Mention**): develops a robust method for group-level data valuation that is resistant to strategic group splitting.
 - **Leave-One-Out Stable Conformal Prediction** (**ICLR 2025**): uses leave-one-out algorithmic stability to make conformal prediction faster while maintaining statistical validity.
 
 See the full list on my [Publications](/publications/) page or my [Google Scholar profile](https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra).
@@ -60,7 +60,7 @@ See the full list on my [Publications](/publications/) page or my [Google Schola
 
 - **Gold Reviewer Award**, ICML 2026 (Jun 2026)
   Awarded to the top 25% of reviewers based on area-chair ratings of submitted reviews.
-- **Honorable Mention**, ICML 2025 DataWorld Workshop (Jul 2025)
+- **Best Paper Award Honorable Mention**, ICML 2025 DataWorld Workshop (Jul 2025)
   Awarded to *Faithful Group Shapley Value* as one of two honorable mentions in the workshop's Best Paper Awards.
 - **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University (2026)
   Recognizes independence, creativity, originality, progress, and potential for publication/application in Ph.D. research. One of two awardees.
