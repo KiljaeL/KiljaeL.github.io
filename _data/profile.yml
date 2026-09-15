@@ -1,0 +1,117 @@
+headline: "Statistical foundations for reliable and accountable AI"
+summary: >-
+  I develop principled and scalable methods for data-centric AI, explainable AI,
+  LLM evaluation, and uncertainty quantification. My work connects statistical
+  theory with practical algorithms for understanding data, model behavior, and
+  structured human preferences.
+
+research_focus:
+  - title: "Data-centric AI"
+    description: "Measuring the value of data points, groups, and contributors while accounting for strategic behavior and real-world structure."
+  - title: "Explainable AI"
+    description: "Designing Shapley-based attribution methods that respect priority, precedence, and dependencies among contributors."
+  - title: "LLM evaluation"
+    description: "Modeling soft, cyclic, and multi-criterion preferences to evaluate modern generative AI systems more faithfully."
+  - title: "Uncertainty quantification"
+    description: "Building conformal prediction methods with statistical guarantees and substantially lower computational cost."
+
+education:
+  - degree: "Ph.D. in Statistics"
+    school: "The Ohio State University"
+    location: "Columbus, OH"
+    dates: "Aug 2022 — Expected Summer 2027"
+    details: "Minor in Computer Science · GPA: 4.00/4.00"
+    note: "Advisor: Yuan Zhang"
+  - degree: "M.S. in Statistics"
+    school: "Korea University"
+    location: "Seoul, South Korea"
+    dates: "Mar 2020 — Aug 2021"
+    details: "GPA: 4.44/4.50"
+    note: "Advisor: Taeryon Choi · Thesis: Fully Bayesian Semiparametric Two-stage Meta-analysis"
+  - degree: "B.S. in Statistics"
+    school: "Korea University"
+    location: "Seoul, South Korea"
+    dates: "Mar 2014 — Feb 2020"
+    details: "GPA: 4.14/4.50"
+
+research_appointments:
+  - role: "Graduate Research Assistant"
+    organization: "The Ohio State University"
+    location: "Columbus, OH"
+    dates: "Aug 2025 — Present"
+    description: "Research with Yuan Zhang on data valuation, attribution, and uncertainty quantification for modern AI systems."
+  - role: "Graduate Research Assistant"
+    organization: "Korea University"
+    location: "Seoul, South Korea"
+    dates: "Mar 2020 — Aug 2021"
+    description: "Developed a Bayesian semiparametric two-stage meta-analysis model and applied it to U.S. COVID-19 data."
+
+professional_experience:
+  - role: "Data Scientist Intern"
+    organization: "United Airlines"
+    location: "Chicago, IL"
+    dates: "May 2026 — Present"
+    description: "Built demand forecasting models using customer search data as a proxy for latent total demand, improving willingness-to-pay estimation beyond observed booking behavior."
+  - role: "Statistical Consultant"
+    organization: "The Ohio State University"
+    location: "Columbus, OH"
+    dates: "May 2025 — Jul 2025"
+    description: "Advised six clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis."
+
+teaching:
+  - role: "Graduate Teaching Assistant"
+    organization: "The Ohio State University"
+    dates: "Aug 2023 — Present"
+    description: "Teaching assistant across 11 courses, including Advanced Theory of Statistics, Statistical Computation, Statistical Machine Learning, and Statistical Inference for Data Analytics."
+  - role: "Graduate Teaching Assistant"
+    organization: "Korea University"
+    dates: "Mar 2020 — Aug 2021"
+    description: "Teaching assistant for Statistical Computing, Introduction to Bayesian Statistics, and Statistical Research Method."
+
+honors:
+  - title: "ICML Gold Reviewer Award"
+    organization: "International Conference on Machine Learning"
+    year: "2026"
+    description: "Recognized among the top 25% of reviewers based on area-chair ratings."
+  - title: "Ransom & Marian Whitney Award for Research"
+    organization: "The Ohio State University"
+    year: "2026"
+    description: "One of two awardees, recognizing research independence, creativity, originality, and publication potential."
+  - title: "Best Paper Award Honorable Mention"
+    organization: "ICML DataWorld Workshop"
+    year: "2025"
+    description: "Awarded to Faithful Group Shapley Value; ranked among the top three of 55 accepted submissions."
+  - title: "University Fellowship"
+    organization: "The Ohio State University"
+    year: "2022–2023"
+  - title: "Academic Excellence Scholarships"
+    organization: "Korea University"
+    year: "2015–2019"
+
+talks:
+  - title: "Generalized Priority-Aware Shapley Value"
+    venue: "ASA Statistical Learning and Data Science Conference (SLDS 2026)"
+    location: "New York, NY"
+    date: "Nov 2026"
+    type: "Invited talk · Scheduled"
+  - title: "Generalized Priority-Aware Shapley Value"
+    venue: "IMS International Conference on Statistics and Data Science (ICSDS 2026)"
+    location: "Split, Croatia"
+    date: "Dec 2026"
+    type: "Invited talk · Scheduled"
+
+service:
+  reviewer: "ICLR (2025); ICML (2025, 2026); NeurIPS (2025, 2026); AISTATS (2026)."
+  leadership:
+    - "Department representative, Department of Statistics, Korea University (2014)"
+    - "Executive officer, KUBig Data Science Society, Korea University (2018)"
+
+skills:
+  - label: "Programming"
+    items: "Python, R, C++, SQL, Git"
+  - label: "ML stack"
+    items: "PyTorch, Hugging Face Transformers, scikit-learn, NumPy/SciPy, pandas"
+  - label: "LLM & generative AI"
+    items: "Open-source LLM and diffusion fine-tuning/inference, quantized models, PEFT, RLHF"
+  - label: "Infrastructure"
+    items: "SLURM/HPC clusters, GPU computing, SSH, tmux"

@@ -1,0 +1,22 @@
+{% assign publication = include.post %}
+<article class="publication-card{% if include.featured %} publication-card--featured{% endif %}">
+  <div class="publication-card__meta">
+    <span class="publication-card__venue">{{ publication.venue_short | default: publication.venue }}</span>
+    <span>{{ publication.date | date: "%Y" }}</span>
+  </div>
+  <h3 class="publication-card__title">
+    <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+  </h3>
+  {% if publication.authors %}
+    <p class="publication-card__authors">{{ publication.authors }}</p>
+  {% endif %}
+  {% if publication.excerpt %}
+    <p class="publication-card__description">{{ publication.excerpt | strip_html }}</p>
+  {% endif %}
+  <div class="publication-card__links">
+    {% if publication.paperurl %}
+      <a href="{{ publication.paperurl }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+    {% endif %}
+    <a href="{{ publication.url | relative_url }}">Details <span aria-hidden="true">→</span></a>
+  </div>
+</article>

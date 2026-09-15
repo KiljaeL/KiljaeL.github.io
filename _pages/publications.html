@@ -1,35 +1,32 @@
 ---
-layout: archive
+layout: profile
 title: "Publications"
 permalink: /publications/
-author_profile: true
+description: "Publications by Kiljae Lee on data valuation, Shapley-based attribution, LLM evaluation, and conformal prediction."
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">My work develops principled, scalable methods for data-centric AI, explainable AI, data valuation, and uncertainty quantification. You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<header class="page-intro">
+  <p class="eyebrow">Research</p>
+  <h1>Publications</h1>
+  <p>My work develops statistically principled and computationally scalable methods for data valuation, explainable AI, LLM evaluation, and uncertainty quantification.</p>
+  <a class="text-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+</header>
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<div class="publication-sections">
+  {% for category in site.publication_category %}
+    {% assign category_posts = site.publications | where: "category", category[0] | reverse %}
+    {% if category_posts.size > 0 %}
+      <section class="publication-section" aria-labelledby="publication-category-{{ forloop.index }}">
+        <div class="publication-section__heading">
+          <h2 id="publication-category-{{ forloop.index }}">{{ category[1].title }}</h2>
+          <span>{{ category_posts.size }} {% if category_posts.size == 1 %}work{% else %}works{% endif %}</span>
+        </div>
+        <div class="publication-list">
+          {% for post in category_posts %}
+            {% include publication-card.html post=post %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
+</div>

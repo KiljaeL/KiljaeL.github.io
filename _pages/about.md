@@ -1,73 +1,135 @@
 ---
+layout: profile
 permalink: /
-title: "About Me"
-author_profile: true
+title: "Kiljae Lee"
+description: "Statistics Ph.D. candidate at The Ohio State University working on data-centric AI, explainable AI, LLM evaluation, and uncertainty quantification."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi! I am a **Ph.D. candidate in Statistics** at The Ohio State University, advised by [Prof. Yuan Zhang](https://www.asc.ohio-state.edu/zhang.7824/).
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="home-hero__copy">
+    <p class="eyebrow">Statistics Ph.D. Candidate · The Ohio State University</p>
+    <h1 id="home-title">{{ site.data.profile.headline }}</h1>
+    <p class="home-hero__lead">{{ site.data.profile.summary }}</p>
 
-My research develops **principled and scalable methods for modern AI systems**, especially where statistical theory can make black-box models more reliable, interpretable, and accountable. I work on data-centric AI, explainable AI, data valuation, Shapley-based attribution, and uncertainty quantification.
+    <div class="home-hero__actions">
+      <a class="profile-button profile-button--primary" href="{{ '/publications/' | relative_url }}">Explore my research</a>
+      <a class="profile-button profile-button--secondary" href="{{ '/files/KiljaeLee_CV.pdf' | relative_url }}">View CV</a>
+    </div>
 
-The common thread in my work is simple: modern AI systems depend on data, model outputs, and human preferences that are often structured, strategic, noisy, or expensive to evaluate. I design methods that respect that structure while remaining computationally feasible.
+    <ul class="profile-links" aria-label="Academic and professional profiles">
+      <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+      <li><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
 
-## Research Focus
+  <aside class="home-hero__profile" aria-label="Current profile">
+    <div class="portrait-frame">
+      <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
+    </div>
+    <div class="current-status">
+      <span class="current-status__label">Currently</span>
+      <strong>Ph.D. Candidate in Statistics</strong>
+      <span>Advised by <a href="https://www.asc.ohio-state.edu/zhang.7824/" target="_blank" rel="noopener">Yuan Zhang</a></span>
+      <span>Expected Summer 2027</span>
+    </div>
+  </aside>
+</section>
 
-- **Data-centric AI and data valuation**: quantifying the value of data points, data groups, and contributors in machine learning systems.
-- **Explainable AI and attribution**: developing Shapley-based methods that account for priority, precedence, and structured dependencies.
-- **Uncertainty quantification**: building conformal prediction tools that are statistically valid and computationally efficient.
-- **Statistical foundations for AI**: turning theoretical guarantees into algorithms that scale to modern AI applications, including generative AI and LLM-related settings.
+<section class="profile-section" aria-labelledby="research-focus-title">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker">Research focus</p>
+      <h2 id="research-focus-title">Making modern AI systems more reliable</h2>
+    </div>
+    <p>My research studies how data, contributors, predictions, and preferences should be valued when structure and strategic behavior matter.</p>
+  </div>
 
-## Selected Highlights
+  <div class="focus-grid">
+    {% for focus in site.data.profile.research_focus %}
+      <article class="focus-card">
+        <span class="focus-card__number">0{{ forloop.index }}</span>
+        <h3>{{ focus.title }}</h3>
+        <p>{{ focus.description }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-- **Priority-Aware Shapley Value** (**ICML 2026**): introduces PASV, a Shapley-based framework that incorporates precedence constraints and contributor-specific priority weights for more structure-faithful attribution.
-- **Faithful Group Shapley Value** (**NeurIPS 2025**; **ICML 2025 DataWorld Workshop Best Paper Award Honorable Mention**): develops a robust method for group-level data valuation that is resistant to strategic group splitting.
-- **Leave-One-Out Stable Conformal Prediction** (**ICLR 2025**): uses leave-one-out algorithmic stability to make conformal prediction faster while maintaining statistical validity.
+<section class="profile-section profile-section--tinted" aria-labelledby="featured-work-title">
+  <div class="section-heading section-heading--compact">
+    <div>
+      <p class="section-kicker">Selected work</p>
+      <h2 id="featured-work-title">Featured publications</h2>
+    </div>
+    <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+  </div>
 
-See the full list on my [Publications](/publications/) page or my [Google Scholar profile](https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra).
+  {% assign featured_publications = site.publications | where: "featured", true | sort: "featured_order" %}
+  <div class="publication-grid">
+    {% for post in featured_publications %}
+      {% include publication-card.html post=post featured=true %}
+    {% endfor %}
+  </div>
+</section>
 
-## Experience
+<section class="profile-section" aria-labelledby="recognition-title">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker">Recognition</p>
+      <h2 id="recognition-title">Recent honors and service</h2>
+    </div>
+    <p>Recognition for research contributions and peer review across the machine learning community.</p>
+  </div>
 
-- **Statistics Researcher Intern**, United Airlines (May 2026 - Present)
-  Working on applied statistical and machine learning problems in an industry setting.
+  <div class="recognition-grid">
+    {% for honor in site.data.profile.honors limit:3 %}
+      <article class="recognition-card">
+        <span class="recognition-card__year">{{ honor.year }}</span>
+        <h3>{{ honor.title }}</h3>
+        <p class="recognition-card__organization">{{ honor.organization }}</p>
+        {% if honor.description %}<p>{{ honor.description }}</p>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-- **Graduate Research Assistant**, The Ohio State University (Aug 2025 - Present)
-  Researching data valuation, attribution, and uncertainty quantification for modern AI systems.
+<section class="profile-section profile-section--split" aria-labelledby="experience-title">
+  <div>
+    <p class="section-kicker">Experience</p>
+    <h2 id="experience-title">Research grounded in practice</h2>
+    <p class="section-copy">Alongside theoretical research, I work on statistical and machine learning problems in industry and interdisciplinary consulting.</p>
+  </div>
+  <div class="compact-timeline">
+    {% for item in site.data.profile.professional_experience %}
+      <article class="compact-timeline__item">
+        <div>
+          <h3>{{ item.role }}</h3>
+          <p>{{ item.organization }} · {{ item.location }}</p>
+        </div>
+        <span>{{ item.dates }}</span>
+      </article>
+    {% endfor %}
+    {% for item in site.data.profile.research_appointments limit:1 %}
+      <article class="compact-timeline__item">
+        <div>
+          <h3>{{ item.role }}</h3>
+          <p>{{ item.organization }} · {{ item.location }}</p>
+        </div>
+        <span>{{ item.dates }}</span>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-- **Graduate Teaching Assistant**, The Ohio State University (Aug 2023 - Present)
-  TA for 11 courses including Advanced Theory of Statistics, Statistical Computation, and Statistical Machine Learning.
-
-- **Statistical Consultant**, The Ohio State University (May 2025 - Jul 2025)
-  Advised 6 clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis.
-
-## Education
-
-- **The Ohio State University**, Columbus, OH
-  *Ph.D. in Statistics; Minor in Computer Science* (Aug 2022 - Expected Jun 2027)
-  Advisor: Dr. Yuan Zhang
-
-- **Korea University**, Seoul, South Korea
-  *Master in Statistics* (Mar 2020 - Aug 2021)
-  Advisor: Dr. Taeryon Choi
-  Thesis: *Fully Bayesian Semiparametric Two-stage Meta-analysis*
-
-- **Korea University**, Seoul, South Korea
-  *Bachelor of Statistics* (Mar 2014 - Feb 2020)
-
-## Honors & Awards
-
-- **Gold Reviewer Award**, ICML 2026 (Jun 2026)
-  Awarded to the top 25% of reviewers based on area-chair ratings of submitted reviews.
-- **Best Paper Award Honorable Mention**, ICML 2025 DataWorld Workshop (Jul 2025)
-  Awarded to *Faithful Group Shapley Value* as one of two honorable mentions in the workshop's Best Paper Awards.
-- **Ransom & Marian Whitney Award for Research**, Department of Statistics, The Ohio State University (2026)
-  Recognizes independence, creativity, originality, progress, and potential for publication/application in Ph.D. research. One of two awardees.
-- **University Fellowship**, The Ohio State University (2022-2023)
-- **Academic Excellence Scholarships**, Korea University (2015-2019)
-
-## Skills
-
-- **Languages/Tools**: Python, R, LaTeX, SQL, C++, MATLAB, SAS, Julia
-- **ML/AI**: Scikit-learn, PyTorch, TensorFlow, Keras
+<section class="contact-band" aria-labelledby="contact-title">
+  <div>
+    <p class="section-kicker">Connect</p>
+    <h2 id="contact-title">Interested in reliable, data-centric AI?</h2>
+  </div>
+  <a class="profile-button profile-button--light" href="mailto:{{ site.author.email }}">Get in touch</a>
+</section>

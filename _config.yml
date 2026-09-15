@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Kiljae Lee"
 title_separator          : "-"
 name                     : &name "Kiljae Lee"
-description              : &description "Kiljae Lee is a Ph.D. candidate in Statistics at The Ohio State University, developing principled and scalable methods for data-centric AI, explainable AI, data valuation, and uncertainty quantification."
+description              : &description "Kiljae Lee is a Statistics Ph.D. candidate at The Ohio State University developing statistical foundations for data-centric AI, explainable AI, LLM evaluation, and uncertainty quantification."
 url                      : https://kiljaeL.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "KiljaeL/KiljaeL.github.io"
@@ -22,10 +22,10 @@ repository               : "KiljaeL/KiljaeL.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "kiljae2.png"
+  avatar           : "kiljae.jpg"
   name             : "Kiljae Lee"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate in Statistics"
+  bio              : "Statistics Ph.D. candidate working on reliable, data-centric AI."
   location         : "Columbus, OH"
   employer         : "The Ohio State University"
   uri              : # URL
@@ -143,9 +143,12 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Kiljae Lee"
+  links:
+    - "https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra"
+    - "https://github.com/kiljaeL"
+    - "https://www.linkedin.com/in/kiljaelee"
 
 
 # Analytics
@@ -173,18 +176,26 @@ exclude:
   - assets/js/vendor
   - CHANGELOG
   - Capfile
+  - CONTRIBUTING.md
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
+  - resume
+  - .DS_Store
+  - google_analytics.html
+  - talkmap.ipynb
+  - talkmap.py
   - tmp
   - vendor
 keep_files:
