@@ -11,7 +11,7 @@ redirect_from:
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero__copy">
     <p class="eyebrow">Statistics Ph.D. Candidate · The Ohio State University</p>
-    <h1 id="home-title">{{ site.data.profile.headline }}</h1>
+    <h1 id="home-title">Statistical foundations for<br>reliable and accountable AI</h1>
     <p class="home-hero__lead">{{ site.data.profile.summary }}</p>
 
     <div class="home-hero__actions">
@@ -39,7 +39,7 @@ redirect_from:
   </aside>
 </section>
 
-<section class="profile-section" aria-labelledby="research-focus-title">
+<section class="profile-section profile-section--tinted" aria-labelledby="research-focus-title">
   <div class="section-heading">
     <div>
       <p class="section-kicker">Research focus</p>
@@ -51,7 +51,7 @@ redirect_from:
   <div class="focus-grid">
     {% for focus in site.data.profile.research_focus %}
       <article class="focus-card">
-        <span class="focus-card__number">0{{ forloop.index }}</span>
+        <span class="focus-card__number">{{ forloop.index }}</span>
         <h3>{{ focus.title }}</h3>
         <p>{{ focus.description }}</p>
       </article>
@@ -59,7 +59,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="profile-section profile-section--tinted" aria-labelledby="featured-work-title">
+<section class="profile-section" aria-labelledby="featured-work-title">
   <div class="section-heading section-heading--compact">
     <div>
       <p class="section-kicker">Selected work</p>
@@ -76,7 +76,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="profile-section" aria-labelledby="recognition-title">
+<section class="profile-section profile-section--tinted" aria-labelledby="recognition-title">
   <div class="section-heading">
     <div>
       <p class="section-kicker">Recognition</p>
