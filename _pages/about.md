@@ -124,11 +124,3 @@ redirect_from:
     {% endfor %}
   </div>
 </section>
-
-<section class="contact-band" aria-labelledby="contact-title">
-  <div>
-    <p class="section-kicker">Connect</p>
-    <h2 id="contact-title">Interested in reliable, data-centric AI?</h2>
-  </div>
-  <a class="profile-button profile-button--light" href="mailto:{{ site.author.email }}">Get in touch</a>
-</section>
