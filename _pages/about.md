@@ -1,7 +1,7 @@
 ---
 layout: profile
 permalink: /
-title: "Kiljae Lee"
+title: "Kiljae Lee's Website"
 description: "Statistics Ph.D. candidate at The Ohio State University working on data-centric AI, explainable AI, LLM evaluation, and uncertainty quantification."
 redirect_from:
   - /about/
