@@ -32,7 +32,6 @@ redirect_from:
       <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
     </div>
     <div class="current-status">
-      <span class="current-status__label">Currently</span>
       <strong>Ph.D. Candidate in Statistics</strong>
       <span>Advised by <a href="https://www.asc.ohio-state.edu/zhang.7824/" target="_blank" rel="noopener">Yuan Zhang</a></span>
       <span>Expected Summer 2027</span>
