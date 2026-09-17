@@ -20,7 +20,7 @@ redirect_from:
         <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
       </div>
     </div>
-    <p class="home-hero__lead">{{ site.data.profile.summary }}</p>
+    <p class="home-hero__lead">Hi, I am Kiljae Lee, a Ph.D. candidate in Statistics at The Ohio State University, where I am advised by Professor <a href="https://www.asc.ohio-state.edu/zhang.7824/" target="_blank" rel="noopener">Yuan Zhang</a>. {{ site.data.profile.summary }}</p>
 
     <div class="home-hero__actions">
       <a class="profile-button profile-button--primary" href="{{ '/publications/' | relative_url }}">Explore my research</a>
