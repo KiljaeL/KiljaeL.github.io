@@ -49,8 +49,7 @@ redirect_from:
   <div class="focus-grid">
     {% for focus in site.data.profile.research_focus %}
       <article class="focus-card">
-        <span class="focus-card__number">{{ forloop.index }}</span>
-        <h3>{{ focus.title }}</h3>
+        <h3 class="focus-card__heading"><span class="focus-card__number">{{ forloop.index }}.</span> {{ focus.title }}</h3>
         <p>{{ focus.description }}</p>
       </article>
     {% endfor %}
