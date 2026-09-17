@@ -18,6 +18,22 @@
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <details class="mobile-nav">
+        <summary>
+          <span class="visually-hidden">Open navigation menu</span>
+          <span class="navicon" aria-hidden="true"></span>
+        </summary>
+        <ul class="mobile-nav__links">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+              {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li><a href="{{ domain }}{{ link.url }}"{% if page.url == link.url %} class="is-active" aria-current="page"{% endif %}>{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
     </div>
   </div>
 </div>
