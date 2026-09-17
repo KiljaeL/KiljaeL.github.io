@@ -15,6 +15,11 @@ redirect_from:
       <p class="home-hero__graduation">Expected to graduate in 2027 Summer</p>
     </div>
     <h1 id="home-title">Statistical foundations for<br>reliable and accountable AI</h1>
+    <div class="home-hero__mobile-portrait">
+      <div class="portrait-frame">
+        <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
+      </div>
+    </div>
     <p class="home-hero__lead">{{ site.data.profile.summary }}</p>
 
     <div class="home-hero__actions">
