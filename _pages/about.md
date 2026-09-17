@@ -12,7 +12,7 @@ redirect_from:
   <div class="home-hero__copy">
     <div class="home-hero__credentials">
       <p class="eyebrow">Statistics Ph.D. Candidate · The Ohio State University</p>
-      <p class="home-hero__graduation">Expected to graduate in 2027 Summer</p>
+      <p class="home-hero__graduation">Expected to graduate in Summer 2027</p>
     </div>
     <h1 id="home-title">Statistical foundations for<br>reliable and accountable AI</h1>
     <div class="home-hero__mobile-portrait">
