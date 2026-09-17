@@ -146,6 +146,26 @@ a {
   text-transform: uppercase;
 }
 
+.home-hero__credentials {
+  display: grid;
+  gap: 0.32rem;
+  margin-bottom: 0.7rem;
+}
+
+.home-hero__credentials .eyebrow {
+  margin-bottom: 0;
+}
+
+.home-hero__graduation {
+  margin: 0;
+  color: var(--profile-rust);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
 .home-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.58fr);
@@ -248,6 +268,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 250px;
+  padding-bottom: 5.9rem;
   justify-self: end;
 }
 
@@ -277,26 +298,6 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center 22%;
-}
-
-.current-status {
-  display: grid;
-  gap: 0.25rem;
-  width: calc(100% - 1.2rem);
-  position: relative;
-  z-index: 0;
-  margin: 0.75rem auto 0;
-  padding: 1rem 1.05rem;
-  border: 1px solid rgba(18, 56, 77, 0.13);
-  border-radius: 0.7rem;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 12px 30px rgba(18, 56, 77, 0.1);
-  font-size: 0.82rem;
-}
-
-.current-status strong {
-  color: var(--profile-navy);
-  font-size: 0.93rem;
 }
 
 .profile-section {
@@ -936,6 +937,7 @@ a {
 
   .home-hero__profile {
     width: min(68vw, 230px);
+    padding-bottom: 0;
     justify-self: start;
   }
 

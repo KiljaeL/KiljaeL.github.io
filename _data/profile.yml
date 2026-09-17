@@ -50,7 +50,7 @@ professional_experience:
   - role: "Data Scientist Intern"
     organization: "United Airlines"
     location: "Chicago, IL"
-    dates: "May 2026 — Present"
+    dates: "May 2026 — August 2026"
     description: "Built demand forecasting models using customer search data as a proxy for latent total demand, improving willingness-to-pay estimation beyond observed booking behavior."
   - role: "Statistical Consultant"
     organization: "The Ohio State University"

@@ -10,7 +10,10 @@ redirect_from:
 
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero__copy">
-    <p class="eyebrow">Statistics Ph.D. Candidate · The Ohio State University</p>
+    <div class="home-hero__credentials">
+      <p class="eyebrow">Statistics Ph.D. Candidate · The Ohio State University</p>
+      <p class="home-hero__graduation">Expected to graduate in 2027 Summer</p>
+    </div>
     <h1 id="home-title">Statistical foundations for<br>reliable and accountable AI</h1>
     <p class="home-hero__lead">{{ site.data.profile.summary }}</p>
 
@@ -27,14 +30,9 @@ redirect_from:
     </ul>
   </div>
 
-  <aside class="home-hero__profile" aria-label="Current profile">
+  <aside class="home-hero__profile" aria-label="Portrait of Kiljae Lee">
     <div class="portrait-frame">
       <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
-    </div>
-    <div class="current-status">
-      <strong>Ph.D. Candidate in Statistics</strong>
-      <span>Advised by <a href="https://www.asc.ohio-state.edu/zhang.7824/" target="_blank" rel="noopener">Yuan Zhang</a></span>
-      <span>Expected Summer 2027</span>
     </div>
   </aside>
 </section>
