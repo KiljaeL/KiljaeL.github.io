@@ -1,0 +1,135 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.52in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{0B4F71}
+\definecolor{muted}{HTML}{4A5568}
+\definecolor{rulegray}{HTML}{D6DEE6}
+\definecolor{venue}{HTML}{8A3A44}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.03}
+\setlist[itemize]{leftmargin=1.05em, itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\titleformat{\section}
+  {\color{accent}\normalsize\bfseries}
+  {}{0pt}{}
+  [\vspace{1pt}\color{rulegray}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+\newcommand{\eduline}[5]{%
+  \textbf{#1} \hfill {\color{muted}#2}\\
+  \textit{#3}#4 \hfill \textit{#5}\par\vspace{4pt}
+}
+
+\newcommand{\publication}[4]{%
+  \textbf{\href{#1}{#2}} {\small (#3)}\\
+  {\small #4}\par\vspace{2.5pt}
+}
+
+\newcommand{\roleline}[4]{%
+  \textbf{#1} \hfill {\color{muted}#2}\\
+  \textit{#3} \hfill \textit{#4}\par\vspace{1pt}
+}
+
+\begin{document}
+
+{\huge\bfseries Kiljae Lee}\\[2pt]
+{\color{accent}Statistics Ph.D. Candidate | Data-Centric AI | Explainable AI | LLM Evaluation | Uncertainty Quantification}\\[3.5pt]
+\href{mailto:lee.10428@osu.edu}{lee.10428@osu.edu} \quad
+\href{tel:+16144053585}{(614) 405-3585} \quad
+\href{https://kiljaeL.github.io}{Website} \quad
+\href{https://www.linkedin.com/in/kiljaelee}{LinkedIn} \quad
+\href{https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra}{Google Scholar} \quad
+\href{https://github.com/kiljael}{GitHub}
+\vspace{-4.2pt}
+
+\section{Education}
+\eduline
+  {Ph.D. in Statistics; Minor in Computer Science}
+  {Aug 2022 -- Expected Jun 2027}
+  {The Ohio State University,}
+  { Advisor: Dr. Yuan Zhang, GPA: 4.00/4.00}
+  {Columbus, OH}
+\eduline
+  {M.S. in Statistics}
+  {Mar 2020 -- Aug 2021}
+  {Korea University,}
+  { Advisor: Dr. Taeryon Choi, GPA: 4.44/4.50}
+  {Seoul, South Korea}
+\eduline
+  {B.S. in Statistics}
+  {Mar 2014 -- Feb 2020}
+  {Korea University,}
+  { GPA: 4.14/4.50}
+  {Seoul, South Korea}
+\vspace{-5.8pt}
+
+\section{Research Signal}
+\begin{itemize}
+  \item \textbf{4 first-author papers at ICML, NeurIPS, and ICLR, including one co-first-author paper}, bringing statistical insight to data valuation, feature attribution, LLM evaluation, and uncertainty quantification in modern AI systems.
+  \item Bridges \textbf{statistical theory and practical AI implementation}, translating Shapley-value and uncertainty quantification ideas into scalable methods for evaluating data quality, model behavior, and prediction uncertainty.
+  \item Identifies \textbf{failure modes and adversarial vulnerabilities} in widely used data valuation methods, and develops robust frameworks for reliable data contribution measurement.
+\end{itemize}
+
+\section{Selected Publications}
+\publication
+  {https://arxiv.org/abs/2605.15018}
+  {Generalized Priority-Aware Shapley Value}
+  {\textcolor{venue}{\textbf{NeurIPS 2026}}; first author}
+  {Incorporates cyclic human preferences into LLM evaluation by modeling structured preferences as directed weighted priority graphs.}
+\publication
+  {https://arxiv.org/abs/2602.09326}
+  {Priority-Aware Shapley Value}
+  {\textcolor{venue}{\textbf{ICML 2026}}; first author}
+  {Identifies data copying attacks in data valuation and introduces PASV, a robust data valuation framework that accounts for precedence constraints among data providers.}
+\publication
+  {https://arxiv.org/abs/2505.19013}
+  {Faithful Group Shapley Value}
+  {\textcolor{venue}{\textbf{NeurIPS 2025}}; \textcolor{venue}{\textbf{ICML 2025 DataWorld Workshop}}; one of two co-first authors}
+  {Identifies dataset splitting attacks in data valuation and proposes FGSV, a faithful data valuation method that defends against strategic manipulation.}
+\publication
+  {https://openreview.net/forum?id=Bt1vnCnAVS}
+  {Leave-One-Out Stable Conformal Prediction}
+  {\textcolor{venue}{\textbf{ICLR 2025}}; first author}
+  {Achieves $\geq$100x speedups over standard conformal prediction methods by avoiding data splitting and iterative model fitting at the same time.}
+
+\section{Research and Industry Experience}
+\roleline{Data Scientist Intern}{May 2026 -- August 2026}{United Airlines}{Chicago, IL}
+\begin{itemize}
+  \item Built demand forecasting models that use customer search data as a proxy for latent total demand, improving willingness-to-pay estimation beyond observed booking behavior.
+\end{itemize}
+\roleline{Graduate Research Assistant}{Aug 2025 -- Present}{The Ohio State University}{Columbus, OH}
+\roleline{Statistical Consultant}{May 2025 -- Jul 2025}{The Ohio State University}{Columbus, OH}
+\vspace{1pt}
+
+\section{Additional Recognition and Service}
+\begin{itemize}
+  \item \textbf{ICML 2026 Gold Reviewer} (top 25\% of reviewers); reviewer for ICLR (2025), ICML (2025, 2026), NeurIPS (2025, 2026), and AISTATS (2026).
+  \item \textbf{Ransom \& Marian Whitney Award for Research 2026}, The Ohio State University; one of two awardees, recognizing Ph.D. research independence, creativity, originality, and publication/application potential.
+  \item \textbf{Best Paper Award Honorable Mention}, ICML 2025 DataWorld Workshop, for \textit{Faithful Group Shapley Value}; ranked among the top 3 of 55 accepted submissions.
+\end{itemize}
+
+\section{Technical Skills}
+\textbf{Programming}: Python, R, C++, SQL, Git\\
+\textbf{ML stack}: PyTorch, Hugging Face Transformers, scikit-learn, NumPy/SciPy, pandas\\
+\textbf{LLM/Generative AI}: Open-source \{LLM/Diffusion\} \{fint-tuning/inference\}, quantized models, PEFT, RLHF\\
+\textbf{Infrastructure}: SLURM/HPC clusters, GPU computing, SSH/tmux
+
+\end{document}

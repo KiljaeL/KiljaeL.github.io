@@ -1,0 +1,174 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.58in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{0B4F71}
+\definecolor{muted}{HTML}{4A5568}
+\definecolor{rulegray}{HTML}{D6DEE6}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.03}
+\setlist[itemize]{leftmargin=1.15em, itemsep=3pt, topsep=3pt, parsep=0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\titleformat{\section}
+  {\color{accent}\large\bfseries}
+  {}{0pt}{}
+  [\vspace{1pt}\color{rulegray}\titlerule\vspace{4pt}]
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+
+\newcommand{\roleline}[4]{%
+  \textbf{#1} \hfill {\color{muted}#2}\\
+  \textit{#3} \hfill \textit{#4}\vspace{2pt}
+}
+
+\newcommand{\eduline}[4]{%
+  \textbf{#1} \hfill {\color{muted}#2}\\
+  \textit{#3} \hfill \textit{#4}\\[-1pt]
+}
+
+\newcommand{\paperentry}[4]{%
+  \textbf{#1} \hfill {\color{muted}#2}\\
+  \textit{#3}\\[-2pt]
+  \begin{itemize}
+    \item #4
+  \end{itemize}\vspace{1pt}
+}
+
+\newcommand{\awardentry}[2]{%
+  \textbf{#1}: #2\\[-1pt]
+}
+
+\newcommand{\detailline}[1]{%
+  {\small\color{muted}#1}\vspace{2pt}
+}
+
+\begin{document}
+
+{\Huge\bfseries Kiljae Lee}\\[-1pt]
+{\color{accent}\large Statistics Ph.D. Candidate | Data-Centric AI, Explainable AI, Data Valuation, Uncertainty Quantification}\\[4pt]
+\href{mailto:lee.10428@osu.edu}{lee.10428@osu.edu} \quad
+\href{https://kiljaeL.github.io}{kiljaeL.github.io} \quad
+\href{https://www.linkedin.com/in/kiljaelee}{linkedin.com/in/kiljaelee} \quad
+\href{https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra}{Google Scholar} \quad
+\href{https://github.com/KiljaeL}{github.com/KiljaeL}
+
+\vspace{5pt}
+{\small
+Statistics Ph.D. candidate at The Ohio State University developing principled, scalable methods for modern AI systems. My work asks how to value data, attribute model behavior, and quantify uncertainty when contributors, preferences, and model outputs are structured, strategic, or expensive to evaluate.
+}
+
+\section{Research Identity and Signal}
+\begin{itemize}
+  \item \textbf{First-author publications at ICML, NeurIPS, and ICLR}, connecting statistical theory with scalable algorithms for data valuation, attribution, and uncertainty quantification.
+  \item \textbf{Core research story}: Shapley-based data valuation and attribution for modern AI systems, including priority structures, group data contribution, and efficient probabilistic value estimation.
+  \item \textbf{Recognition}: ICML 2026 Gold Reviewer; peer reviewer for ICLR, ICML, NeurIPS, and AISTATS; ICML 2025 DataWorld Workshop Best Paper Award Honorable Mention for \textit{Faithful Group Shapley Value}.
+\end{itemize}
+
+\section{Selected Publications}
+\paperentry
+  {\href{https://arxiv.org/abs/2605.15018}{Generalized Priority-Aware Shapley Value}}
+  {NeurIPS 2026}
+  {Kiljae Lee, Ziqi Liu, Weijing Tang, Yuan Zhang}
+  {Extends priority-aware valuation to arbitrary directed weighted priority graphs, supporting data and model valuation under cyclic, soft, or multi-criterion preferences.}
+
+\paperentry
+  {\href{https://arxiv.org/abs/2602.09326}{Priority-Aware Shapley Value}}
+  {ICML 2026}
+  {Kiljae Lee, Ziqi Liu, Weijing Tang, Yuan Zhang}
+  {Introduces PASV, a Shapley-based attribution framework that accounts for precedence constraints and contributor-specific priority weights, enabling more structure-faithful valuation when contributors are not interchangeable.}
+
+\paperentry
+  {\href{https://arxiv.org/abs/2505.19013}{Faithful Group Shapley Value}}
+  {NeurIPS 2025}
+  {Kiljae Lee*, Ziqi Liu*, Weijing Tang, Yuan Zhang}
+  {Identifies strategic group-splitting attacks in group data valuation and proposes a faithful valuation method with efficient approximation; received ICML 2025 DataWorld Workshop Best Paper Award Honorable Mention.}
+
+\paperentry
+  {\href{https://openreview.net/forum?id=Bt1vnCnAVS}{Leave-One-Out Stable Conformal Prediction}}
+  {ICLR 2025}
+  {Kiljae Lee, Yuan Zhang}
+  {Develops a conformal prediction method using leave-one-out algorithmic stability, improving computational efficiency while preserving finite-sample validity for uncertainty quantification.}
+
+\paperentry
+  {\href{https://arxiv.org/abs/2605.02827}{First-Order Efficiency for Probabilistic Value Estimation}}
+  {ICML 2026 NExT-Game Workshop}
+  {Ziqi Liu, Kiljae Lee, Yuan Zhang, Weijing Tang}
+  {Studies Shapley values and semivalues through a statistical efficiency lens and designs a surrogate-adjusted estimator guided by first-order mean squared error.}
+
+{\footnotesize * Equal contribution.}
+
+\section{Honors and Recognition}
+\awardentry{Gold Reviewer Award, ICML 2026}{Top 25\% of reviewers based on area-chair ratings of submitted reviews.}
+\awardentry{Best Paper Award Honorable Mention, ICML 2025 DataWorld Workshop}{Awarded to \textit{Faithful Group Shapley Value}.}
+\awardentry{Ransom \& Marian Whitney Award for Research, The Ohio State University}{Recognizes independence, creativity, originality, and publication/application potential in Ph.D. research; one of two awardees.}
+\awardentry{University Fellowship, The Ohio State University}{University-level fellowship, 2022--2023.}
+\awardentry{Academic Excellence Scholarships, Korea University}{Multiple merit scholarships, 2015--2019.}
+
+\newpage
+\section{Research and Industry Experience}
+\roleline{Statistics Researcher Intern}{May 2026 -- August 2026}{United Airlines}{Chicago, IL}
+\begin{itemize}
+  \item Applying statistical and machine learning methods to industry problems in an operational setting.
+\end{itemize}
+
+\roleline{Graduate Research Assistant}{Aug 2025 -- Present}{The Ohio State University}{Columbus, OH}
+\begin{itemize}
+  \item Researching data valuation, attribution, and uncertainty quantification for modern AI systems with Prof. Yuan Zhang.
+\end{itemize}
+
+\roleline{Graduate Teaching Assistant}{Aug 2023 -- Present}{The Ohio State University}{Columbus, OH}
+\begin{itemize}
+  \item TA for 11 courses, including Advanced Theory of Statistics, Statistical Computation, Statistical Machine Learning, and Statistical Inference for Data Analytics.
+\end{itemize}
+
+\roleline{Statistical Consultant}{May 2025 -- Jul 2025}{The Ohio State University}{Columbus, OH}
+\begin{itemize}
+  \item Advised six clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis.
+\end{itemize}
+
+\roleline{Graduate Research Assistant}{Mar 2020 -- Aug 2021}{Korea University}{Seoul, South Korea}
+\begin{itemize}
+  \item Developed a Bayesian semiparametric two-stage meta-analysis model and applied it to U.S. COVID-19 data.
+\end{itemize}
+
+\section{Education}
+\eduline{Ph.D. in Statistics; Minor in Computer Science}{Aug 2022 -- Expected Jun 2027}{The Ohio State University}{Columbus, OH}
+\detailline{Advisor: Dr. Yuan Zhang \quad GPA: 4.00/4.00}
+
+\vspace{2pt}
+\eduline{M.S. in Statistics}{Mar 2020 -- Aug 2021}{Korea University}{Seoul, South Korea}
+\detailline{Advisor: Dr. Taeryon Choi \quad Thesis: \textit{Fully Bayesian Semiparametric Two-stage Meta-analysis} \quad GPA: 4.44/4.50}
+
+\vspace{2pt}
+\eduline{B.S. in Statistics}{Mar 2014 -- Feb 2020}{Korea University}{Seoul, South Korea}
+\detailline{GPA: 4.14/4.50}
+
+\section{Technical Skills}
+\textbf{Research areas}: Data-centric AI, explainable AI, Shapley value, data valuation, conformal prediction, uncertainty quantification\\
+\textbf{Programming and tools}: Python, R, Julia, SQL, C++, MATLAB, SAS, LaTeX\\
+\textbf{ML stack}: Scikit-learn, PyTorch, TensorFlow, Keras
+
+\section{Service and Leadership}
+\begin{itemize}
+  \item \textbf{Peer review}: ICLR 2025; ICML 2025 and 2026; NeurIPS 2025 and 2026; AISTATS 2026. Gold Reviewer, ICML 2026.
+  \item \textbf{Teaching}: TA experience spanning statistical theory, computation, machine learning, inference, multivariate analysis, Bayesian statistics, and R.
+  \item \textbf{Leadership}: Academic Affairs Chair, Data Science Society, Korea University; elected student representative, Department of Statistics.
+\end{itemize}
+
+\end{document}

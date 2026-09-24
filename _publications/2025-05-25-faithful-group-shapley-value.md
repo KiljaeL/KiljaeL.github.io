@@ -10,7 +10,7 @@ venue_short: "NeurIPS"
 paperurl: "https://arxiv.org/abs/2505.19013"
 authors: "<strong>Kiljae Lee*</strong>, Ziqi Liu*, Weijing Tang, and Yuan Zhang"
 featured: true
-featured_order: 2
+featured_order: 3
 cv_note: "Equal contribution. Best Paper Award Honorable Mention, ICML 2025 DataWorld Workshop."
 citation: 'Lee, K., Liu, Z., Tang, W., and Zhang, Y. (2025). &quot;Faithful Group Shapley Value.&quot; <i>Advances in Neural Information Processing Systems (NeurIPS)</i>. ICML 2025 DataWorld Workshop Best Paper Award Honorable Mention.'
 ---

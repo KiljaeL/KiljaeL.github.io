@@ -1,0 +1,150 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[margin=0.72in,top=0.68in,bottom=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\definecolor{accent}{HTML}{153D56}
+\definecolor{muted}{HTML}{52606D}
+\definecolor{missing}{HTML}{A34D2B}
+\definecolor{rulegray}{HTML}{C9D4DC}
+
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\raggedbottom
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{1pt}\color{rulegray}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{5pt}{2pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Kiljae Lee}
+\fancyfoot[R]{\footnotesize\color{muted}\thepage}
+
+\newcommand{\todo}[1]{{\color{missing}\textit{[Add: #1]}}}
+\newcommand{\degree}[4]{%
+  \textbf{#1} \hfill {\color{muted}#2}\\[-1pt]
+  #3\par
+  \if\relax\detokenize{#4}\relax\else
+    #4\par
+  \fi
+  \vspace{3pt}
+}
+\newcommand{\pub}[3]{%
+  #1\\[-1pt]
+  \emph{#2}. #3\par\vspace{4pt}
+}
+\newcommand{\lineentry}[2]{%
+  \textbf{#1}\hfill {\color{muted}#2}\par\vspace{2pt}
+}
+\newcommand{\presentation}[3]{%
+  \emph{#1}\hfill {\color{muted}#3}\\[-1pt]
+  #2\par\vspace{2pt}
+}
+
+\begin{document}
+
+{\Huge\bfseries Kiljae Lee}\\[3pt]
+{\color{accent}Statistics Ph.D. Candidate \textbar{} The Ohio State University}\\[3pt]
+\href{mailto:lee.10428@osu.edu}{lee.10428@osu.edu}\quad
+\href{tel:+16144053585}{(614) 405-3585}\quad
+\href{https://kiljaeL.github.io}{Website}\quad
+\href{https://www.linkedin.com/in/kiljaelee}{LinkedIn}\quad
+\href{https://scholar.google.com/citations?user=UsRBPmUAAAAJ&hl=en&oi=sra}{Google Scholar}\quad
+\href{https://github.com/kiljael}{GitHub}
+
+\section{Education}
+\degree{The Ohio State University}
+  {Aug 2022--Expected 2027 Summer}
+  {Ph.D. in Statistics; Minor in Computer Science \hfill {\color{muted}GPA: 4.00/4.00}}
+  {Advisor: Yuan Zhang}
+\degree{Korea University}{Mar 2020--Aug 2021}
+  {M.S. in Statistics \hfill {\color{muted}GPA: 4.44/4.50}}
+  {Advisor: Taeryon Choi. Thesis: \emph{Fully Bayesian Semiparametric Two-stage Meta-analysis}.}
+\degree{Korea University}{Mar 2014--Feb 2020}{B.S. in Statistics \hfill {\color{muted}GPA: 4.14/4.50}}{}
+
+\section{Research Interests}
+Statistical machine learning, data-centric AI, explainable AI, LLM evaluation, uncertainty quantification.
+
+\section{Publications}
+
+\subsection{Conference Papers}
+\pub{\textbf{Kiljae Lee}, Ziqi Liu, Weijing Tang, and Yuan Zhang}
+  {\href{https://arxiv.org/abs/2605.15018}{Generalized Priority-Aware Shapley Value}}
+  {Advances in Neural Information Processing Systems (NeurIPS), 2026. Presented at the ICML 2026 CTB Workshop.}
+\pub{\textbf{Kiljae Lee}, Ziqi Liu, Weijing Tang, and Yuan Zhang}
+  {\href{https://arxiv.org/abs/2602.09326}{Priority-Aware Shapley Value}}
+  {International Conference on Machine Learning (ICML), 2026.}
+\pub{\textbf{Kiljae Lee}\textsuperscript{*}, Ziqi Liu\textsuperscript{*}, Weijing Tang, and Yuan Zhang}
+  {\href{https://arxiv.org/abs/2505.19013}{Faithful Group Shapley Value}}
+  {Advances in Neural Information Processing Systems (NeurIPS), 2025. Best Paper Award Honorable Mention, ICML 2025 DataWorld Workshop.}
+\pub{\textbf{Kiljae Lee} and Yuan Zhang}
+  {\href{https://openreview.net/forum?id=Bt1vnCnAVS}{Leave-One-Out Stable Conformal Prediction}}
+  {International Conference on Learning Representations (ICLR), 2025.}
+{\footnotesize\textsuperscript{*} Equal contribution.}
+
+\subsection{Preprints}
+\pub{Ziqi Liu, \textbf{Kiljae Lee}, Yuan Zhang, and Weijing Tang}
+  {\href{https://arxiv.org/abs/2605.02827}{First-Order Efficiency for Probabilistic Value Estimation}}
+  {Preprint, 2026. Presented at the ICML 2026 NExT-Game Workshop.}
+
+\subsection{Journal Article}
+\pub{Dongu Han, \textbf{Kiljae Lee}, Yeonseung Chung, Genya Kobayashi, and Taeryon Choi}
+  {\href{https://doi.org/10.1080/02664763.2025.2577659}{Bayesian Hierarchical Time-Varying Distributed Lag Nonlinear Model: Applications in the Short-Term Association between Ambient Temperature and Daily Confirmed Cases of COVID-19}}
+  {\emph{Journal of Applied Statistics}, 53(10):1916--1942, 2026.}
+
+\section{Honors and Fellowships}
+\lineentry{ICML Gold Reviewer Award}{2026}
+\lineentry{Ransom \& Marian Whitney Award for Research, The Ohio State University}{2026}
+\lineentry{Best Paper Award Honorable Mention, ICML DataWorld Workshop}{2025}
+\lineentry{University Fellowship, The Ohio State University}{2022--2023}
+\lineentry{Academic Excellence Scholarships, Korea University}{2015--2019}
+
+\section{Research Appointments}
+\lineentry{Graduate Research Assistant, The Ohio State University}{Aug 2025--present}
+Research with Yuan Zhang on data valuation, attribution, and uncertainty quantification for modern AI systems.\par\vspace{5pt}
+\lineentry{Graduate Research Assistant, Korea University}{Mar 2020--Aug 2021}
+Developed a Bayesian semiparametric two-stage meta-analysis model; applied it to U.S. COVID-19 data.
+
+\section{Teaching Experience}
+\lineentry{Graduate Teaching Assistant, The Ohio State University}{Aug 2023--present}
+Teaching assistant across 11 courses. Selected courses: Advanced Theory of Statistics; Statistical Computation; Statistical Machine Learning; Statistical Inference for Data Analytics.
+
+\section{Talks and Presentations}
+\subsection{Invited Talks (Scheduled)}
+\presentation{Generalized Priority-Aware Shapley Value}{ASA Statistical Learning and Data Science Conference (SLDS 2026), New York, NY}{Nov 2026}
+\presentation{Generalized Priority-Aware Shapley Value}{IMS International Conference on Statistics and Data Science (ICSDS 2026), Split, Croatia}{Dec 2026}
+
+\subsection{Poster Presentations}
+\presentation{Generalized Priority-Aware Shapley Value}{ICML CTB Workshop}{2026}
+\presentation{Priority-Aware Shapley Value}{International Conference on Machine Learning (ICML 2026)}{2026}
+\presentation{Priority-Aware Shapley Value}{The Ohio State University AI Research Summit}{2026}
+\presentation{Faithful Group Shapley Value}{Advances in Neural Information Processing Systems (NeurIPS 2025)}{2025}
+\presentation{Faithful Group Shapley Value}{ICML DataWorld Workshop}{2025}
+\presentation{Leave-One-Out Stable Conformal Prediction}{International Conference on Learning Representations (ICLR 2025)}{2025}
+
+\section{Academic Service and Leadership}
+\textbf{Conference reviewer:} ICLR (2025); ICML (2025, 2026); NeurIPS (2025, 2026); AISTATS (2026).\\[3pt]
+\textbf{Leadership:} Department representative, Department of Statistics, Korea University (2014); Executive officer, KUBig (Data Science Society), Korea University (2018).
+
+\section{Additional Research and Professional Experience}
+\lineentry{Data Scientist Intern, United Airlines}{May 2026--August 2026}
+Built demand forecasting models using customer search data as a proxy for latent total demand, improving willingness-to-pay estimation beyond observed booking behavior.\par\vspace{5pt}
+\lineentry{Statistical Consultant, The Ohio State University}{May--Jul 2025}
+Advised six clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis.
+
+\section{Technical Skills}
+Python, R, C++, SQL; PyTorch, Transformers, scikit-learn, GPU/HPC computing.
+
+\end{document}

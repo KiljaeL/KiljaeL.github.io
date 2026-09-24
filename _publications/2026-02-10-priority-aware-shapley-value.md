@@ -10,7 +10,7 @@ venue_short: "ICML"
 paperurl: "https://arxiv.org/abs/2602.09326"
 authors: "<strong>Kiljae Lee</strong>, Ziqi Liu, Weijing Tang, and Yuan Zhang"
 featured: true
-featured_order: 1
+featured_order: 2
 cv_note: "First author."
 citation: 'Lee, K., Liu, Z., Tang, W., and Zhang, Y. (2026). &quot;Priority-Aware Shapley Value.&quot; <i>International Conference on Machine Learning (ICML)</i>.'
 ---

@@ -405,7 +405,7 @@ a {
 
 .publication-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -421,7 +421,7 @@ a {
 .publication-card--featured {
   display: flex;
   flex-direction: column;
-  min-height: 340px;
+  min-height: 270px;
 }
 
 .publication-card:hover {
@@ -927,13 +927,6 @@ a {
     min-height: 180px;
   }
 
-  .publication-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .publication-card--featured {
-    min-height: 0;
-  }
 }
 
 @media (max-width: 760px) {
@@ -1070,9 +1063,14 @@ a {
   }
 
   .focus-grid,
+  .publication-grid,
   .recognition-grid,
   .publication-list {
     grid-template-columns: 1fr;
+  }
+
+  .publication-card--featured {
+    min-height: 0;
   }
 
   .focus-card {
