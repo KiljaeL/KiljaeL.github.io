@@ -1,7 +1,7 @@
 ---
 layout: profile
 permalink: /
-title: "Kiljae Lee's Website"
+title: "Kiljae Lee's Homepage"
 description: "Statistics Ph.D. candidate at The Ohio State University working on data-centric AI, explainable AI, LLM evaluation, and uncertainty quantification."
 redirect_from:
   - /about/
@@ -24,7 +24,7 @@ redirect_from:
 
     <div class="home-hero__actions">
       <a class="profile-button profile-button--primary" href="{{ '/publications/' | relative_url }}">Explore my research</a>
-      <a class="profile-button profile-button--secondary" href="{{ '/files/KiljaeLee_CV.pdf' | relative_url }}">View CV</a>
+      <a class="profile-button profile-button--secondary" href="{{ '/files/KiljaeLee_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">View CV</a>
     </div>
 
     <ul class="profile-links" aria-label="Academic and professional profiles">

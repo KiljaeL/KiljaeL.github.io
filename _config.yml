@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Kiljae Lee's Website"
+title                    : "Kiljae Lee's Homepage"
 title_separator          : "-"
 name                     : &name "Kiljae Lee"
 description              : &description "Kiljae Lee is a Statistics Ph.D. candidate at The Ohio State University developing statistical foundations for data-centric AI, explainable AI, LLM evaluation, and uncertainty quantification."
