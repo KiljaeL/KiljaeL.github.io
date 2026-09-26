@@ -24,7 +24,7 @@ redirect_from:
 
     <div class="home-hero__actions">
       <a class="profile-button profile-button--primary" href="{{ '/publications/' | relative_url }}">Explore my research</a>
-      <a class="profile-button profile-button--secondary" href="{{ '/files/KiljaeLee_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">View CV</a>
+      <a class="profile-button profile-button--secondary" href="{{ '/files/KiljaeLee_CV.pdf' | relative_url }}">View CV</a>
     </div>
 
     <ul class="profile-links" aria-label="Academic and professional profiles">
