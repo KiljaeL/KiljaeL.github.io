@@ -26,6 +26,10 @@ description: "Publications by Kiljae Lee on data valuation, Shapley-based attrib
             {% include publication-card.html post=post %}
           {% endfor %}
         </div>
+        {% assign category_authors = category_posts | map: "authors" | join: " " %}
+        {% if category_authors contains "*" %}
+          <p class="publication-footnote">* Equal contribution</p>
+        {% endif %}
       </section>
     {% endif %}
   {% endfor %}

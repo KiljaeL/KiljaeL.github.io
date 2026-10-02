@@ -5,6 +5,16 @@ summary: >-
   theory with practical algorithms for understanding data, model behavior, and
   structured human preferences.
 
+news:
+  - date: "Sep 2026"
+    text: "[Generalized Priority-Aware Shapley Value](/publication/2026-05-14-generalized-priority-aware-shapley-value) was accepted to NeurIPS 2026."
+  - date: "Aug 2026"
+    text: "Invited to speak at the IMS International Conference on Statistics and Data Science (ICSDS 2026) in Split, Croatia, in December 2026."
+  - date: "May 2026"
+    text: "Invited to speak at the ASA Statistical Learning and Data Science Conference (SLDS 2026) in New York in November 2026."
+  - date: "Apr 2026"
+    text: "[Priority-Aware Shapley Value](/publication/2026-02-10-priority-aware-shapley-value) was accepted to ICML 2026."
+
 research_focus:
   - title: "Data-centric AI"
     description: "Measuring the value of data points, groups, and contributors while accounting for strategic behavior and real-world structure."

@@ -3,11 +3,12 @@ title: "Generalized Priority-Aware Shapley Value"
 collection: publications
 category: conferences
 permalink: /publication/2026-05-14-generalized-priority-aware-shapley-value
-excerpt: "Extends priority-aware valuation to arbitrary directed weighted priority graphs, enabling data and model valuation when pairwise preferences are cyclic, soft, or multi-criterion."
+excerpt: "Brings cyclic, soft, and multi-criterion human preferences into LLM evaluation by modeling structured preferences as directed weighted priority graphs."
 date: 2026-05-14
 venue: "NeurIPS 2026"
 venue_short: "NeurIPS"
 paperurl: "https://arxiv.org/abs/2605.15018"
+codeurl: "https://github.com/KiljaeL/GPASV"
 authors: "<strong>Kiljae Lee</strong>, Ziqi Liu, Weijing Tang, and Yuan Zhang"
 featured: true
 featured_order: 1

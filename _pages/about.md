@@ -22,6 +22,8 @@ redirect_from:
     </div>
     <p class="home-hero__lead">Hi, I am Kiljae Lee, a Ph.D. candidate in Statistics at The Ohio State University, where I am advised by Professor <a href="https://www.asc.ohio-state.edu/zhang.7824/" target="_blank" rel="noopener">Yuan Zhang</a>. {{ site.data.profile.summary }}</p>
 
+    <p class="home-hero__status"><span class="home-hero__status-dot" aria-hidden="true"></span><span>I am on the 2026–27 job market. Feel free to <a href="mailto:{{ site.author.email }}">reach out</a>.</span></p>
+
     <div class="home-hero__actions">
       <a class="profile-button profile-button--primary" href="{{ '/publications/' | relative_url }}">Explore my research</a>
       <a class="profile-button profile-button--secondary" href="{{ '/files/KiljaeLee_CV.pdf' | relative_url }}">View CV</a>
@@ -40,6 +42,21 @@ redirect_from:
       <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="900" height="1025">
     </div>
   </aside>
+</section>
+
+<section class="profile-section profile-section--split" aria-labelledby="news-title">
+  <div>
+    <p class="section-kicker">News</p>
+    <h2 id="news-title">Recent updates</h2>
+  </div>
+  <ul class="news-list">
+    {% for item in site.data.profile.news limit:5 %}
+      <li>
+        <span class="news-list__date">{{ item.date }}</span>
+        <p>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="profile-section profile-section--tinted" aria-labelledby="research-focus-title">
@@ -76,6 +93,10 @@ redirect_from:
       {% include publication-card.html post=post featured=true %}
     {% endfor %}
   </div>
+  {% assign featured_authors = featured_publications | map: "authors" | join: " " %}
+  {% if featured_authors contains "*" %}
+    <p class="publication-footnote">* Equal contribution</p>
+  {% endif %}
 </section>
 
 <section class="profile-section profile-section--tinted" aria-labelledby="recognition-title">
@@ -111,6 +132,7 @@ redirect_from:
         <div>
           <h3>{{ item.role }}</h3>
           <p>{{ item.organization }} · {{ item.location }}</p>
+          {% if item.description %}<p class="compact-timeline__description">{{ item.description }}</p>{% endif %}
         </div>
         <span>{{ item.dates }}</span>
       </article>
@@ -120,6 +142,7 @@ redirect_from:
         <div>
           <h3>{{ item.role }}</h3>
           <p>{{ item.organization }} · {{ item.location }}</p>
+          {% if item.description %}<p class="compact-timeline__description">{{ item.description }}</p>{% endif %}
         </div>
         <span>{{ item.dates }}</span>
       </article>

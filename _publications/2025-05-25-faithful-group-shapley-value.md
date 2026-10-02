@@ -8,6 +8,7 @@ date: 2025-05-25
 venue: "NeurIPS 2025"
 venue_short: "NeurIPS"
 paperurl: "https://arxiv.org/abs/2505.19013"
+codeurl: "https://github.com/KiljaeL/Faithful_GSV"
 authors: "<strong>Kiljae Lee*</strong>, Ziqi Liu*, Weijing Tang, and Yuan Zhang"
 featured: true
 featured_order: 3

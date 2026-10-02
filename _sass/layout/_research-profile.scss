@@ -197,6 +197,36 @@ a {
   line-height: 1.75;
 }
 
+.home-hero__status {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  margin: 1.5rem 0 0;
+  padding: 0.6rem 0.95rem;
+  border: 1px solid #f0dcd2;
+  border-radius: 0.6rem;
+  background: #fbf1ec;
+  color: var(--profile-navy);
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.home-hero__status a {
+  color: var(--profile-rust);
+  text-underline-offset: 0.18em;
+}
+
+.home-hero__status-dot {
+  flex: none;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: 0.42rem;
+  border-radius: 50%;
+  background: var(--profile-rust);
+  box-shadow: 0 0 0 4px rgba(163, 77, 43, 0.15);
+}
+
 .home-hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -562,6 +592,56 @@ a {
   white-space: nowrap;
 }
 
+.compact-timeline__item .compact-timeline__description {
+  margin-top: 0.55rem;
+  color: #435762;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--global-border-color);
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 1.25rem;
+  margin: 0;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.news-list__date {
+  color: var(--profile-rust);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.news-list p {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.news-list a {
+  color: var(--profile-navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-list a:hover {
+  color: var(--profile-blue);
+}
+
 /* Shared interior page header */
 .page-intro {
   max-width: 880px;
@@ -627,6 +707,12 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.publication-footnote {
+  margin: 1rem 0 0;
+  color: var(--profile-muted);
+  font-size: 0.82rem;
 }
 
 /* Publication detail */
@@ -705,12 +791,6 @@ a {
 
 .publication-detail__body p + p {
   margin-top: 1rem;
-}
-
-.publication-detail__footnote {
-  margin: 1rem 0 0;
-  color: var(--profile-muted);
-  font-size: 0.82rem;
 }
 
 .publication-detail__copy {

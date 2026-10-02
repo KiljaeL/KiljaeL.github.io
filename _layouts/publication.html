@@ -28,6 +28,9 @@ layout: default
           {% if page.paperurl %}
             <a class="profile-button profile-button--primary" href="{{ page.paperurl }}" target="_blank" rel="noopener">{{ paper_label }} <span aria-hidden="true">&nbsp;↗</span></a>
           {% endif %}
+          {% if page.codeurl %}
+            <a class="profile-button profile-button--secondary" href="{{ page.codeurl }}" target="_blank" rel="noopener">Code <span aria-hidden="true">&nbsp;↗</span></a>
+          {% endif %}
           {% if page.citation %}
             <a class="profile-button profile-button--secondary" href="#citation">Cite</a>
           {% endif %}
@@ -40,7 +43,7 @@ layout: default
           {{ content }}
         </div>
         {% if page.authors contains "*" %}
-          <p class="publication-detail__footnote">* Equal contribution</p>
+          <p class="publication-footnote">* Equal contribution</p>
         {% endif %}
       </section>
 

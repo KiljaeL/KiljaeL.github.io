@@ -17,6 +17,9 @@
     {% if publication.paperurl %}
       <a href="{{ publication.paperurl }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
     {% endif %}
+    {% if publication.codeurl %}
+      <a href="{{ publication.codeurl }}" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+    {% endif %}
     <a href="{{ publication.url | relative_url }}">Details <span aria-hidden="true">→</span></a>
   </div>
 </article>

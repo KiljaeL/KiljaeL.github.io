@@ -8,6 +8,7 @@ date: 2025-04-16
 venue: "ICLR 2025"
 venue_short: "ICLR"
 paperurl: "https://openreview.net/forum?id=Bt1vnCnAVS"
+codeurl: "https://github.com/KiljaeL/LOO-StabCP"
 authors: "<strong>Kiljae Lee</strong> and Yuan Zhang"
 featured: true
 featured_order: 4
