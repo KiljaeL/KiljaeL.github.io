@@ -5,6 +5,9 @@ _site/
 # Ignore the directory for local files during development
 local/
 
+# CV and resume sources stay local; the public CV is files/KiljaeLee_CV.pdf
+resume/
+
 # Ignore the Gemfile that is generated
 Gemfile.lock
 
