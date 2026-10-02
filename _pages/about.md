@@ -17,7 +17,7 @@ redirect_from:
     <h1 id="home-title">Statistical foundations for<br>reliable and accountable AI</h1>
     <div class="home-hero__mobile-portrait">
       <div class="portrait-frame">
-        <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
+        <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="900" height="1025">
       </div>
     </div>
     <p class="home-hero__lead">Hi, I am Kiljae Lee, a Ph.D. candidate in Statistics at The Ohio State University, where I am advised by Professor <a href="https://www.asc.ohio-state.edu/zhang.7824/" target="_blank" rel="noopener">Yuan Zhang</a>. {{ site.data.profile.summary }}</p>
@@ -37,7 +37,7 @@ redirect_from:
 
   <aside class="home-hero__profile" aria-label="Portrait of Kiljae Lee">
     <div class="portrait-frame">
-      <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="2906" height="3310">
+      <img src="{{ '/images/kiljae.jpg' | relative_url }}" alt="Portrait of Kiljae Lee" width="900" height="1025">
     </div>
   </aside>
 </section>

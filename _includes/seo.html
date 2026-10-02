@@ -53,7 +53,7 @@
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{% if site.og_image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 <meta name="twitter:description" content="{{ seo_description }}">
 <meta name="twitter:url" content="{{ canonical_url }}">
@@ -87,6 +87,11 @@
   <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% elsif site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ site.name }}, {{ site.author.bio }}">
 {% endif %}
 
 {% if page.date %}
@@ -101,17 +106,6 @@
 {% endif %}
 {% if paginator.next_page %}
   <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
-{% endif %}
-
-{% if site.og_image %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
-      "logo": {{ site.og_image | prepend: "/images/" | prepend: base_path | jsonify }}
-    }
-  </script>
 {% endif %}
 
 {% if site.social %}
