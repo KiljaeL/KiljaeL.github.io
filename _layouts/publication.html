@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+{% assign year = page.date | date: "%Y" %}
+{% if page.paperurl contains "arxiv.org" %}
+  {% assign paper_label = "Read on arXiv" %}
+{% elsif page.paperurl contains "openreview.net" %}
+  {% assign paper_label = "Read on OpenReview" %}
+{% else %}
+  {% assign paper_label = "Read the paper" %}
+{% endif %}
+
+<div id="main" class="site-shell" role="main">
+  <main class="site-main" aria-label="{{ page.title }}">
+    <article class="publication-detail">
+      <header class="publication-detail__intro">
+        <a class="text-link publication-detail__back" href="{{ '/publications/' | relative_url }}"><span aria-hidden="true">←</span> All publications</a>
+        <p class="eyebrow">{{ page.venue }}{% unless page.venue contains year %} · {{ year }}{% endunless %}</p>
+        <h1>{{ page.title }}</h1>
+        {% if page.authors %}
+          <p class="publication-detail__authors">{{ page.authors }}</p>
+        {% endif %}
+        {% if page.highlight %}
+          <p class="publication-detail__highlight">{{ page.highlight }}</p>
+        {% endif %}
+        <div class="home-hero__actions">
+          {% if page.paperurl %}
+            <a class="profile-button profile-button--primary" href="{{ page.paperurl }}" target="_blank" rel="noopener">{{ paper_label }} <span aria-hidden="true">&nbsp;↗</span></a>
+          {% endif %}
+          {% if page.citation %}
+            <a class="profile-button profile-button--secondary" href="#citation">Cite</a>
+          {% endif %}
+        </div>
+      </header>
+
+      <section class="publication-detail__section" aria-labelledby="overview-title">
+        <p class="section-kicker" id="overview-title">Overview</p>
+        <div class="publication-detail__body">
+          {{ content }}
+        </div>
+        {% if page.authors contains "*" %}
+          <p class="publication-detail__footnote">* Equal contribution</p>
+        {% endif %}
+      </section>
+
+      {% if page.citation %}
+        <section class="publication-detail__section" id="citation" aria-labelledby="citation-title">
+          <div class="publication-detail__section-heading">
+            <p class="section-kicker" id="citation-title">Citation</p>
+            <button type="button" class="text-link publication-detail__copy" data-copy-target="publication-citation" hidden>Copy citation</button>
+          </div>
+          <p class="publication-detail__citation" id="publication-citation">{{ page.citation }}</p>
+        </section>
+      {% endif %}
+
+      <section class="publication-detail__section publication-detail__more" aria-labelledby="more-title">
+        <div class="publication-detail__section-heading">
+          <h2 class="section-kicker" id="more-title">More publications</h2>
+          <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="publication-detail__others">
+          {% assign others = site.publications | sort: "date" | reverse %}
+          {% for post in others %}
+            {% unless post.url == page.url %}
+              <li>
+                <span class="publication-card__venue">{{ post.venue_short | default: post.venue }} · {{ post.date | date: "%Y" }}</span>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </li>
+            {% endunless %}
+          {% endfor %}
+        </ul>
+      </section>
+    </article>
+  </main>
+</div>
+
+<script>
+  document.querySelectorAll('[data-copy-target]').forEach(function (button) {
+    if (!navigator.clipboard) return;
+    button.hidden = false;
+    button.addEventListener('click', function () {
+      var target = document.getElementById(button.dataset.copyTarget);
+      navigator.clipboard.writeText(target.innerText.trim()).then(function () {
+        button.textContent = 'Copied';
+        setTimeout(function () { button.textContent = 'Copy citation'; }, 2000);
+      });
+    });
+  });
+</script>

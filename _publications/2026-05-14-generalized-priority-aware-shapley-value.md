@@ -11,6 +11,7 @@ paperurl: "https://arxiv.org/abs/2605.15018"
 authors: "<strong>Kiljae Lee</strong>, Ziqi Liu, Weijing Tang, and Yuan Zhang"
 featured: true
 featured_order: 1
+highlight: "Also presented at the ICML 2026 CTB Workshop"
 cv_note: "First author. Presented at the ICML 2026 CTB Workshop."
 citation: 'Lee, K., Liu, Z., Tang, W., and Zhang, Y. (2026). &quot;Generalized Priority-Aware Shapley Value.&quot; <i>Advances in Neural Information Processing Systems (NeurIPS)</i>.'
 ---
