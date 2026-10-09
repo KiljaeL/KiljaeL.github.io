@@ -6,14 +6,16 @@ summary: >-
   structured human preferences.
 
 news:
+  - date: "Oct 2026"
+    text: "Recognized as a NeurIPS 2026 Top Reviewer!"
   - date: "Sep 2026"
-    text: "[Generalized Priority-Aware Shapley Value](/publication/2026-05-14-generalized-priority-aware-shapley-value) was accepted to NeurIPS 2026."
+    text: "[Generalized Priority-Aware Shapley Value](/publication/2026-05-14-generalized-priority-aware-shapley-value) was accepted to NeurIPS 2026!"
   - date: "Aug 2026"
     text: "Invited to speak at the IMS International Conference on Statistics and Data Science (ICSDS 2026) in Split, Croatia, in December 2026."
   - date: "May 2026"
     text: "Invited to speak at the ASA Statistical Learning and Data Science Conference (SLDS 2026) in New York in November 2026."
   - date: "Apr 2026"
-    text: "[Priority-Aware Shapley Value](/publication/2026-02-10-priority-aware-shapley-value) was accepted to ICML 2026."
+    text: "[Priority-Aware Shapley Value](/publication/2026-02-10-priority-aware-shapley-value) was accepted to ICML 2026!"
 
 research_focus:
   - title: "Data-centric AI"
@@ -79,10 +81,10 @@ teaching:
     description: "Teaching assistant for Statistical Computing, Introduction to Bayesian Statistics, and Statistical Research Method."
 
 honors:
-  - title: "ICML Gold Reviewer Award"
-    organization: "International Conference on Machine Learning"
+  - title: "NeurIPS Top Reviewer · ICML&nbsp;Gold&nbsp;Reviewer"
+    organization: "NeurIPS 2026 · ICML 2026"
     year: "2026"
-    description: "Recognized among the top 25% of reviewers based on area-chair ratings."
+    description: "Recognized as a NeurIPS 2026 Top Reviewer, and received the ICML Gold Reviewer Award for ranking among the top 25% of reviewers based on area-chair ratings."
   - title: "Ransom & Marian Whitney Award for Research"
     organization: "The Ohio State University"
     year: "2026"
