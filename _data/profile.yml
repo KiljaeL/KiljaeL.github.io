@@ -7,6 +7,8 @@ summary: >-
 
 news:
   - date: "Oct 2026"
+    text: "Received a Student Travel Award for ICSDS 2026!"
+  - date: "Oct 2026"
     text: "Recognized as a NeurIPS 2026 Top Reviewer!"
   - date: "Sep 2026"
     text: "[Generalized Priority-Aware Shapley Value](/publication/2026-05-14-generalized-priority-aware-shapley-value) was accepted to NeurIPS 2026!"
@@ -51,23 +53,27 @@ research_appointments:
     organization: "The Ohio State University"
     location: "Columbus, OH"
     dates: "Aug 2025 — Present"
+    start: "2025-08"
     description: "Research with Yuan Zhang on data valuation, attribution, and uncertainty quantification for modern AI systems."
   - role: "Graduate Research Assistant"
     organization: "Korea University"
     location: "Seoul, South Korea"
     dates: "Mar 2020 — Aug 2021"
+    start: "2020-03"
     description: "Developed a Bayesian semiparametric two-stage meta-analysis model and applied it to U.S. COVID-19 data."
 
 professional_experience:
   - role: "Data Scientist Intern"
     organization: "United Airlines"
     location: "Chicago, IL"
-    dates: "May 2026 — August 2026"
-    description: "Built demand forecasting models using customer search data as a proxy for latent total demand, improving willingness-to-pay estimation beyond observed booking behavior."
+    dates: "May 2026 — Aug 2026"
+    start: "2026-05"
+    description: "First at United to model customer search data as a proxy for latent total demand; built demand forecasting models that extend willingness-to-pay estimation beyond observed bookings."
   - role: "Statistical Consultant"
     organization: "The Ohio State University"
     location: "Columbus, OH"
     dates: "May 2025 — Jul 2025"
+    start: "2025-05"
     description: "Advised six clients across psychology, agricultural science, civil engineering, and related fields on statistical modeling and analysis."
 
 teaching:
@@ -81,12 +87,16 @@ teaching:
     description: "Teaching assistant for Statistical Computing, Introduction to Bayesian Statistics, and Statistical Research Method."
 
 honors:
+  - title: "Student Travel Award"
+    organization: "IMS International Conference on Statistics and Data Science"
+    year: "2026"
+    description: "Travel support for my invited talk on Generalized Priority-Aware Shapley Value at ICSDS 2026 in Split, Croatia."
   - title: "NeurIPS Top Reviewer · ICML&nbsp;Gold&nbsp;Reviewer"
     organization: "NeurIPS 2026 · ICML 2026"
     year: "2026"
     description: "Recognized as a NeurIPS 2026 Top Reviewer, and received the ICML Gold Reviewer Award for ranking among the top 25% of reviewers based on area-chair ratings."
   - title: "Ransom & Marian Whitney Award for Research"
-    organization: "The Ohio State University"
+    organization: "Department of Statistics, The&nbsp;Ohio&nbsp;State&nbsp;University"
     year: "2026"
     description: "One of two awardees, recognizing research independence, creativity, originality, and publication potential."
   - title: "Best Paper Award Honorable Mention"
@@ -102,18 +112,18 @@ honors:
 
 talks:
   - title: "Generalized Priority-Aware Shapley Value"
-    venue: "ASA Statistical Learning and Data Science Conference (SLDS 2026)"
-    location: "New York, NY"
-    date: "Nov 2026"
-    type: "Invited talk · Scheduled"
-  - title: "Generalized Priority-Aware Shapley Value"
     venue: "IMS International Conference on Statistics and Data Science (ICSDS 2026)"
     location: "Split, Croatia"
     date: "Dec 2026"
     type: "Invited talk · Scheduled"
+  - title: "Generalized Priority-Aware Shapley Value"
+    venue: "ASA Statistical Learning and Data Science Conference (SLDS 2026)"
+    location: "New York, NY"
+    date: "Nov 2026"
+    type: "Invited talk · Scheduled"
 
 service:
-  reviewer: "ICLR (2025); ICML (2025, 2026); NeurIPS (2025, 2026); AISTATS (2026)."
+  reviewer: "ICLR (2025); ICML (2025, 2026); NeurIPS (2025, 2026); AISTATS (2026, 2027)."
   leadership:
     - "Department representative, Department of Statistics, Korea University (2014)"
     - "Executive officer, KUBig Data Science Society, Korea University (2018)"

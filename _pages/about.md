@@ -50,7 +50,7 @@ redirect_from:
     <h2 id="news-title">Recent updates</h2>
   </div>
   <ul class="news-list">
-    {% for item in site.data.profile.news limit:5 %}
+    {% for item in site.data.profile.news limit:6 %}
       <li>
         <span class="news-list__date">{{ item.date }}</span>
         <p>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
@@ -109,7 +109,7 @@ redirect_from:
   </div>
 
   <div class="recognition-grid">
-    {% for honor in site.data.profile.honors limit:3 %}
+    {% for honor in site.data.profile.honors limit:4 %}
       <article class="recognition-card">
         <span class="recognition-card__year">{{ honor.year }}</span>
         <h3>{{ honor.title }}</h3>
@@ -127,17 +127,8 @@ redirect_from:
     <p class="section-copy">Alongside theoretical research, I work on statistical and machine learning problems in industry and interdisciplinary consulting.</p>
   </div>
   <div class="compact-timeline">
-    {% for item in site.data.profile.professional_experience %}
-      <article class="compact-timeline__item">
-        <div>
-          <h3>{{ item.role }}</h3>
-          <p>{{ item.organization }} · {{ item.location }}</p>
-          {% if item.description %}<p class="compact-timeline__description">{{ item.description }}</p>{% endif %}
-        </div>
-        <span>{{ item.dates }}</span>
-      </article>
-    {% endfor %}
-    {% for item in site.data.profile.research_appointments limit:1 %}
+    {% assign experience = site.data.profile.professional_experience | concat: site.data.profile.research_appointments | sort: "start" | reverse %}
+    {% for item in experience limit:3 %}
       <article class="compact-timeline__item">
         <div>
           <h3>{{ item.role }}</h3>
