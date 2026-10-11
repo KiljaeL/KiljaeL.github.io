@@ -68,7 +68,7 @@ professional_experience:
     location: "Chicago, IL"
     dates: "May 2026 — Aug 2026"
     start: "2026-05"
-    description: "First at United to model customer search data as a proxy for latent total demand; built demand forecasting models that extend willingness-to-pay estimation beyond observed bookings."
+    description: "First at United to model customer search data for commercial use, as a proxy for latent total demand; built demand forecasting models that extend willingness-to-pay estimation beyond observed bookings."
   - role: "Statistical Consultant"
     organization: "The Ohio State University"
     location: "Columbus, OH"
