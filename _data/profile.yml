@@ -7,7 +7,7 @@ summary: >-
 
 news:
   - date: "Oct 2026"
-    text: "Received a Student Travel Award for ICSDS 2026!"
+    text: "Selected for an ICSDS 2026 Student Travel Award from over 100 applicants! Declined to keep my invited talk."
   - date: "Oct 2026"
     text: "Recognized as a NeurIPS 2026 Top Reviewer!"
   - date: "Sep 2026"
@@ -90,7 +90,7 @@ honors:
   - title: "Student Travel Award"
     organization: "IMS International Conference on Statistics and Data Science"
     year: "2026"
-    description: "Travel support for my invited talk on Generalized Priority-Aware Shapley Value at ICSDS 2026 in Split, Croatia."
+    description: "Selected from over 100 applicants; declined under the conference's one-talk-per-person policy to keep my invited talk at ICSDS 2026."
   - title: "NeurIPS Top Reviewer · ICML&nbsp;Gold&nbsp;Reviewer"
     organization: "NeurIPS 2026 · ICML 2026"
     year: "2026"
